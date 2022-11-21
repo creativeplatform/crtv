@@ -7,6 +7,8 @@ import {
 	createReactClient,
 	studioProvider,
   } from '@livepeer/react';
+import fontFace from '../styles/fontFace'
+import { Global } from '@emotion/react'
 
   const client = createReactClient({
 	provider: studioProvider({ apiKey: process.env.LIVEPEER_API_KEY }),
@@ -28,6 +30,7 @@ import {
 const App = ({ Component, pageProps }) => {
 	return (
 		<ThemeProvider attribute="class">
+			<Global styles={fontFace} />
 			<Web3Provider>
 				<LivepeerConfig client={client} theme={livepeerTheme}>
 					<Component {...pageProps} />
