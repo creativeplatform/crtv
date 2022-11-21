@@ -9,6 +9,7 @@
 		"lint": "next lint"
 	},
 	"dependencies": {
+		"@emotion/react": "^11.10.5",
 		"@heroicons/react": "^1.0.6",
 		"@livepeer/react": "^1.5.3",
 		"autoprefixer": "^10.4.7",

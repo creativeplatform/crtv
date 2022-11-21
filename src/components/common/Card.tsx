@@ -1,16 +1,15 @@
 import React from 'react'
 import { prefetchPlayer, studioProvider } from '@livepeer/react';
-import { Livepeer } from './Livepeer';
+import { Livepeer } from '../Livepeer';
 
 const playbackId =
   'bafybeieoova5cenwcyvwpnqdi537dcdimjhsvsmy7etw27fymxqe2b4pgu';
 
 export const getStaticProps = async () => {
     const dehydratedState = await prefetchPlayer(
-        { 
+        {
             playbackId,
             clearClient: true,
-        
         },
         { provider: studioProvider({ apiKey: process.env.LIVEPEER_API_KEY }) },
     );

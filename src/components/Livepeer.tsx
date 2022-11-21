@@ -2,7 +2,7 @@ import { Player } from '@livepeer/react';
 import Image from 'next/image';
 import * as React from 'react';
  
-import scaryGaryPoster from '../../../public/images/scarygaryshoe.png';
+import scaryGaryPoster from '../../public/images/scarygaryshoe.png';
  
 const PosterImage = () => {
   return (
