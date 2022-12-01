@@ -1,0 +1,14 @@
+/**
+ * Upcreators
+ * Upcreators is the template for Agency, Streamers, Shop, Blog, Portfolio, Events, etc
+ * Exclusively on https://1.envato.market/upcreators-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+@font-face{font-family:Archivo;src:local("Archivo-Regular"),url(../fonts/Archivo-Regular.woff2) format("woff2"),url(../fonts/Archivo-Regular.woff) format("woff");font-weight:400;font-style:normal;font-display:swap}@font-face{font-family:Archivo;src:local("Archivo-Italic"),url(../fonts/Archivo-Italic.woff2) format("woff2"),url(../fonts/Archivo-Italic.woff) format("woff");font-weight:400;font-style:italic;font-display:swap}@font-face{font-family:Archivo;src:local("Archivo-Medium"),url(../fonts/Archivo-Medium.woff2) format("woff2"),url(../fonts/Archivo-Medium.woff) format("woff");font-weight:500;font-style:normal;font-display:swap}@font-face{font-family:Archivo;src:local("Archivo-MediumItalic"),url(../fonts/Archivo-MediumItalic.woff2) format("woff2"),url(../fonts/Archivo-MediumItalic.woff) format("woff");font-weight:500;font-style:italic;font-display:swap}@font-face{font-family:Archivo;src:local("Archivo-SemiBold"),url(../fonts/Archivo-SemiBold.woff2) format("woff2"),url(../fonts/Archivo-SemiBold.woff) format("woff");font-weight:600;font-style:normal;font-display:swap}@font-face{font-family:Archivo;src:local("Archivo-Bold"),url(../fonts/Archivo-Bold.woff2) format("woff2"),url(../fonts/Archivo-Bold.woff) format("woff");font-weight:700;font-style:normal;font-display:swap}@font-face{font-family:Archivo;src:local("Archivo-ExtraBold"),url(../fonts/Archivo-ExtraBold.woff2) format("woff2"),url(../fonts/Archivo-ExtraBold.woff) format("woff");font-weight:800;font-style:normal;font-display:swap}@font-face{font-family:Archivo;src:local("Archivo-Black"),url(../fonts/Archivo-Black.woff2) format("woff2"),url(../fonts/Archivo-Black.woff) format("woff");font-weight:900;font-style:normal;font-display:swap}
+/*# sourceMappingURL=../sourcemaps/preload.css.map */

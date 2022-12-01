@@ -1,0 +1,202 @@
+/**
+ * Upcreators
+ * Upcreators is the template for Agency, Streamers, Shop, Blog, Portfolio, Events, etc
+ * Exclusively on https://1.envato.market/upcreators-html
+ *
+ * @encoding        UTF-8
+ * @version         1.0.0
+ * @copyright       (C) 2018 - 2022 Merkulove ( https://merkulov.design/ ). All rights reserved.
+ * @license         Envato License https://1.envato.market/KYbje
+ * @contributors    Lilith Lamber (winter.rituel@gmail.com)
+ * @support         help@merkulov.design
+ **/
+@font-face {
+    font-family: 'icomoon';
+    src: url('../fonts/icomoon.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    /* use !important to prevent issues with browser extensions that change fonts */
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-to-top:before {
+    content: "\e92a";
+}
+
+.icon-filters:before {
+    content: "\e927";
+}
+
+.icon-arrow-right:before {
+    content: "\e907";
+}
+
+.icon-arrow-left:before {
+    content: "\e90d";
+}
+
+.icon-plus:before {
+    content: "\e928";
+}
+
+.icon-minus:before {
+    content: "\e929";
+}
+
+.icon-angle-up:before {
+    content: "\e900";
+}
+
+.icon-angle-down:before {
+    content: "\e901";
+}
+
+.icon-heart:before {
+    content: "\e924";
+}
+
+.icon-heart-o:before {
+    content: "\e925";
+}
+
+.icon-bold-cross:before {
+    content: "\e902";
+}
+
+.icon-sharp-star:before {
+    content: "\e903";
+}
+
+.icon-return:before {
+    content: "\e904";
+}
+
+.icon-caret-down-solid:before {
+    content: "\e905";
+}
+
+.icon-rectangle-star:before {
+    content: "\e908";
+}
+
+.icon-sticky:before {
+    content: "\e909";
+}
+
+.icon-instagram:before {
+    content: "\e90a";
+}
+
+.icon-tiktok:before {
+    content: "\e90b";
+}
+
+.icon-search:before {
+    content: "\e90c";
+}
+
+.icon-star:before {
+    content: "\e90e";
+}
+
+.icon-star-o:before {
+    content: "\e90f";
+}
+
+.icon-user:before {
+    content: "\e910";
+}
+
+.icon-grid:before {
+    content: "\e911";
+}
+
+.icon-check:before {
+    content: "\e912";
+}
+
+.icon-close:before {
+    content: "\e913";
+}
+
+.icon-list:before {
+    content: "\e914";
+}
+
+.icon-play:before {
+    content: "\e915";
+}
+
+.icon-angle-left:before {
+    content: "\e916";
+}
+
+.icon-angle-right:before {
+    content: "\e917";
+}
+
+.icon-faq:before {
+    content: "\e918";
+}
+
+.icon-reply:before {
+    content: "\e919";
+}
+
+.icon-facebook:before {
+    content: "\e91a";
+}
+
+.icon-quote:before {
+    content: "\e91b";
+}
+
+.icon-circle:before {
+    content: "\e91c";
+}
+
+.icon-youtube:before {
+    content: "\e91d";
+}
+
+.icon-share:before {
+    content: "\e91e";
+}
+
+.icon-bag:before {
+    content: "\e91f";
+}
+
+.icon-location:before {
+    content: "\e920";
+}
+
+.icon-package:before {
+    content: "\e921";
+}
+
+.icon-delivery:before {
+    content: "\e922";
+}
+
+.icon-stats:before {
+    content: "\e923";
+}
+
+.icon-caret-down:before {
+    content: "\e926";
+}

@@ -1,12 +1,14 @@
-# dApp Starter
-
-> The template I use to kickstart all my web3 apps.
-
-This starter kit is composed of Next.js and Tailwind CSS, with ConnectKit, ethers, & wagmi for all your web3 needs. It uses Typescript and an opinionated directory structure for maximum dev confy-ness.
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
 
-First, install dependencies with `yarn install`. Then, initialize the env file with `cp .env.example .env`, and add your Infura project id. Finally, run the development server with `yarn dev`.
+First, run the development server:
+
+```bash
+npm run dev
+# or
+yarn dev
+```
 
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
@@ -18,21 +20,15 @@ The `pages/api` directory is mapped to `/api/*`. Files in this directory are tre
 
 ## Learn More
 
-To learn more about the components of this kit, take a look at the following resources:
+To learn more about Next.js, take a look at the following resources:
 
--   [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
--   [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
--   [Tailwind CSS Documentation](https://tailwindcss.com/docs/) - learn about Tailwind, and browse through the included classes.
--   [Ethers Documentation](https://docs.ethers.io/v5/) - learn about Ethers features and API.
--   [wagmi Documentation](https://wagmi.sh/) - learn about wagmi features and API.
--   [ConnectKit Documentation](https://docs.family.co/connectkit) - learn about ConnectKit's features and API.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Deployment
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-The easiest way to deploy your Next.js app is to use [Vercel](https://vercel.com/new?utm_medium=m1guelpf-dapp-template&filter=next.js), from the creators of Next.js.
+## Deploy on Vercel
 
-Check out the [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## License
-
-This app is open-source and licensed under the MIT license. For more details, check the [License file](LICENSE).
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
