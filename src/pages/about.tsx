@@ -7,10 +7,6 @@ import { specialOfferProductsActions } from "../store/specialOfferProducts-slice
 import { newestProductsActions } from "../store/newestProduct-slice";
 
 import { client } from "../lib/client";
-// import "../../public/scripts/streamers";
-
-import {initSwiperSlider, initInsightSwiper} from "../../public/scripts/modules/slider";
-
 
 // import Benefits from "../components/Benefits";
 // import Carousel from "../components/carousel";
@@ -20,38 +16,13 @@ import {initSwiperSlider, initInsightSwiper} from "../../public/scripts/modules/
 // const Brands = dynamic(() => import("../components/brands"));
 // const Banners = dynamic(() => import("../components/banners"), { ssr: false });
 
-import HomeComponent from "../components/home";
+import AboutComponent from "../components/about";
 
 import { IProduct } from "../lib/types/products";
 import { newestProductsFn } from "../utilities/sortByTimeStamp";
 
-const Home: NextPage<{ products: IProduct[] }> = ({ products }) => {
+const About: NextPage<{ products: IProduct[] }> = ({ products }) => {
     const dispatch = useDispatch();
-
-    function initVideoSwipers() {
-        const sliders = document.querySelectorAll('.channels_content .swiper');
-        sliders.forEach((el, i) => {
-            initSwiperSlider(`.swiper_${i + 1}`, `.swiper_${i + 1}-nav`, {
-                spaceBetween: 30,
-                autoplay: {
-                    pauseOnMouseEnter: true,
-                    disableOnInteraction: false,
-                },
-                speed: 2000,
-                breakpoints: {
-                    767.98: {
-                        slidesPerView: 2,
-                    },
-                    1169.98: {
-                        slidesPerView: 3,
-                    },
-                    1599.98: {
-                        slidesPerView: 4,
-                    }
-                }
-            })
-        })
-    }
 
     useEffect(() => {
         //add products to offers list
@@ -61,23 +32,21 @@ const Home: NextPage<{ products: IProduct[] }> = ({ products }) => {
         //add products to newest list
         const sortedProductsByTimeStamp = newestProductsFn(products);
         dispatch(newestProductsActions.addProducts(sortedProductsByTimeStamp));
-        initInsightSwiper();
-        initVideoSwipers();
-        
     }, [dispatch, products]);
 
     return (
         <div>
-            <HomeComponent />
+            <AboutComponent />
         </div>
     );
 };
 
-export default Home;
+export default About;
 
 export const getStaticProps = async () => {
     const productQuery = `*[_type=='product']`;
     const products = await client.fetch(productQuery);
+
     return {
         props: {
             products,
