@@ -20,7 +20,7 @@ import {initSwiperSlider, initInsightSwiper} from "../../public/scripts/modules/
 // const Brands = dynamic(() => import("../components/brands"));
 // const Banners = dynamic(() => import("../components/banners"), { ssr: false });
 
-import HomeComponent from "../components/home";
+import HomeComponent from "../components/Home";
 
 import { IProduct } from "../lib/types/products";
 import { newestProductsFn } from "../utilities/sortByTimeStamp";

@@ -1,5 +1,7 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
+import ConnectWallet from "./ConnectWallet";
 
 const Header = () => {
     return (
@@ -11,7 +13,7 @@ const Header = () => {
                 </picture>
             </div>
             <div className="container d-flex">
-                <a className="header_logo logo" href="/">
+                <a className="header_logo logo" href="#">
                     <span className="header_logo-wrapper">
                         <img src="/svg/logo--black.svg" alt="UpCreators" />
                     </span>
@@ -20,7 +22,7 @@ const Header = () => {
                 <nav className="header_nav text--medium text--md collapse" id="headerMenu">
                     <ul className="header_nav-list">
                         <li className="header_nav-list_item dropdown">
-                            <a
+                            <Link
                                 className="nav-link nav-item dropdown-toggle"
                                 href="/"
                                 data-bs-toggle="collapse"
@@ -34,11 +36,11 @@ const Header = () => {
                             >
                                 <span className="nav-item_text"> Home </span>
                                 <span className="icon icon-caret-down-solid"></span>
-                            </a>
+                            </Link>
                             <div className="dropdown-menu collapse" id="homeMenu">
                                 <ul className="dropdown-list">
                                     <li className="list-item">
-                                        <a
+                                        <Link
                                             className="dropdown-item nav-item"
                                             data-page="home"
                                             data-page-parent="home"
@@ -46,17 +48,17 @@ const Header = () => {
                                             data-main="true"
                                         >
                                             Home Agency
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="list-item">
-                                        <a
+                                        <Link
                                             className="dropdown-item nav-item"
                                             data-page="streamers"
                                             data-page-parent="home"
                                             href="/"
                                         >
                                             Home Streamers
-                                        </a>
+                                        </Link>
                                     </li>
                                     <li className="list-item">
                                         <a
@@ -287,7 +289,7 @@ const Header = () => {
                     </ul>
                 </nav>
                 <div className="header_user">
-                    <a className="header_user-btn btn btn--outline" href="contacts.html">Get In Touch <i className="icon icon-arrow-right"></i> </a>
+                    <ConnectWallet />
                     <a className="header_user-account" href="#">
                         <i className="icon-user"></i>
                     </a>

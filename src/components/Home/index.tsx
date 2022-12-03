@@ -29,7 +29,7 @@ const Home = () => {
                                         <a className="play" href="#">
                                             <svg width="84" height="93" viewBox="0 0 84 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
-                                                    fill-rule="evenodd"
+                                                    fillRule="evenodd"
                                                     clip-rule="evenodd"
                                                     d="M83.5 46.5L0.5 92.5V0.5L83.5 46.5Z"
                                                     fill="currentColor"

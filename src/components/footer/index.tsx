@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const Footer = () => {
     return (
@@ -18,12 +19,12 @@ const Footer = () => {
                                     d="M44.993 71L36.5 53.2698L28.007 71L18.1104 66.9008L24.6419 48.3582L6.09932 54.8899L2 44.993L19.7302 36.5L2 28.007L6.09932 18.1103L24.6419 24.6418L18.1104 6.09921L28.007 2L36.5 19.7302L44.993 2L54.8899 6.09921L48.3582 24.6418L66.9008 18.1103L71 28.007L53.2698 36.5L71 44.993L66.9008 54.8899L48.3582 48.3582L54.8899 66.9008L44.993 71Z"
                                     fill="transparent"
                                     stroke="currentColor"
-                                    stroke-width="2"
+                                    strokeWidth="2"
                                 />
                             </svg>
                         </div>
                         <h2 className="footer_about-slogan_title">
-                            Now we’re
+                            Now we&#39;re
                             <span className="h1 linebreak outlined outlined--white">Talking</span>
                         </h2>
                         <p className="footer_about-slogan_text">
@@ -106,7 +107,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="footer_copy">Copyright@ <span id="currentYear"></span> UpCreators by Merkulove</p>
+            <p className="footer_copy">Copyright@ <span id="currentYear"></span>2022 Creative Organization DAO, LLC.</p>
         </footer>
     );
 };
