@@ -1,10 +1,10 @@
 <svg width="226" height="81" viewBox="0 0 226 81" fill="none" xmlns="http://www.w3.org/2000/svg">
 <g clip-path="url(#clip0_0_226)">
-<path fillRule="evenodd" clip-rule="evenodd" d="M0 74.9753H219.981V0.68457H0V74.9753Z" stroke="black"/>
-<path fillRule="evenodd" clip-rule="evenodd" d="M219.981 6.70947V74.9743H6.01855V81.0002H226V6.70947H219.981Z" fill="black"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M0 74.9753H219.981V0.68457H0V74.9753Z" stroke="black"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M219.981 6.70947V74.9743H6.01855V81.0002H226V6.70947H219.981Z" fill="black"/>
 <g clip-path="url(#clip1_0_226)">
 <mask id="mask0_0_226" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="14" y="0" width="61" height="75">
-<path fillRule="evenodd" clip-rule="evenodd" d="M14.2383 0H74.8927V74.9755H14.2383V0Z" fill="white"/>
+<path fillRule="evenodd" clipRule="evenodd" d="M14.2383 0H74.8927V74.9755H14.2383V0Z" fill="white"/>
 </mask>
 <g mask="url(#mask0_0_226)">
 <path d="M50.7016 42.0088H46.6591C46.192 42.0088 45.8147 41.892 45.5272 41.6584C45.2398 41.4249 45.0242 41.1284 44.8804 40.7691L41.2691 31.4444H23.9403L20.329 40.7691C20.2032 41.0925 19.9876 41.38 19.6822 41.6315C19.3767 41.883 18.9994 42.0088 18.5503 42.0088H14.5078L29.9501 3.38944H35.2593L50.7016 42.0088ZM25.3956 27.6714H39.8138L33.7501 11.9595C33.3548 10.9893 32.9685 9.77659 32.5912 8.32129C32.3936 9.05792 32.196 9.74065 31.9983 10.3695C31.8187 10.9804 31.639 11.5194 31.4593 11.9865L25.3956 27.6714Z" fill="black"/>
