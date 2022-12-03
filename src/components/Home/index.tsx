@@ -1,3 +1,5 @@
+import { Player } from "@livepeer/react";
+
 const Home = () => {
     return (
         <div>
@@ -5,7 +7,7 @@ const Home = () => {
                 <section className="hero section">
                     <div className="hero_bg">
                         <picture>
-                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                            <source data-srcset="img/placeholder.png" srcSet="img/placeholder.jpg" type="image/webp" />
                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                         </picture>
                     </div>
@@ -13,8 +15,8 @@ const Home = () => {
                         <h1 className="hero_title extra glitch" data-text="what's on-air?">what's on-air?</h1>
                         <div className="hero_media">
                             <picture>
-                                <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                <source data-srcset="img/radiate_warrior.png" srcSet="img/radiate_warrior.png" type="image/webp" />
+                                <img className="lazy" data-src="img/radiate_warrior.png" src="img/radiate_warrior.png" alt="media" />
                             </picture>
                         </div>
                     </div>
@@ -42,11 +44,11 @@ const Home = () => {
                                         <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="cover" />
                                     </picture>
                                 </div>
-                                <iframe
-                                    src="https://www.youtube.com/embed/sRE5iQCdRvE?controls=0"
-                                    title="YouTube video player"
-                                    allowFullScreen={true}
-                                ></iframe>
+                                <Player
+                                    title="Agent 327: Operation Barbershop"
+                                    playbackId="6d7el73r1y12chxr"
+                                    showPipButton
+                                />
                             </div>
                             <div className="description">
                                 <span className="avatar">
@@ -227,11 +229,17 @@ const Home = () => {
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
+                                                                <Player
+                                                                    title="Agent 327: Operation Barbershop"
+                                                                    playbackId="6d7el73r1y12chxr"
+                                                                    showPipButton
+                                                                    controls={{
+                                                                        autohide: 3000,
+                                                                      }}
+                                                                      theme={{
+                                                                        borderStyles: { containerBorderStyle: 'hidden' },
+                                                                        radii: { containerBorderRadius: '10px' },
+                                                                      }}
                                                                 />
                                                             </picture>
                                                         </a>
