@@ -1,27 +1,86 @@
-import { FC } from 'react'
-import Navbar from '../components/common/Navbar'
-import ThemeSwitcher from '../components/ThemeSwitcher'
-import { Card } from '../components/common/Card'
-import Menu from '../components/common/Menu'
+import type { NextPage } from "next";
+import { useEffect } from "react";
+import dynamic from "next/dynamic";
+
+import { useDispatch } from "react-redux";
+import { specialOfferProductsActions } from "../store/specialOfferProducts-slice";
+import { newestProductsActions } from "../store/newestProduct-slice";
+
+import { client } from "../lib/client";
+// import "../../public/scripts/streamers";
+
+import {initSwiperSlider, initInsightSwiper} from "../../public/scripts/modules/slider";
 
 
+// import Benefits from "../components/Benefits";
+// import Carousel from "../components/carousel";
+// const Offers = dynamic(() => import("../components/Offers/Offers"));
+// const Category = dynamic(() => import("../components/category/Category"));
+// const Newest = dynamic(() => import("../components/newest/Newest"));
+// const Brands = dynamic(() => import("../components/brands"));
+// const Banners = dynamic(() => import("../components/banners"), { ssr: false });
 
-const Home: FC = () => {
-	return (
-		<>
-			<Navbar />
-			<div className="relative flex items-top justify-center min-h-screen bg-gray-100 dark:bg-gray-900 sm:items-center py-4 sm:pt-0">
-				<ThemeSwitcher className="absolute bottom-6 right-6" />
-				<div className="max-w-6xl mx-auto sm:px-6 lg:px-8">
-					<div className="mt-8 bg-white dark:bg-gray-800 overflow-hidden shadow sm:rounded-lg">
-						<div className="grid grid-cols-1 md:grid-cols-1">
-							<Card />
-						</div>
-					</div>
-				</div>
-			</div>
-		</>
-	)
-}
+import HomeComponent from "../components/Home";
 
-export default Home
+import { IProduct } from "../lib/types/products";
+import { newestProductsFn } from "../utilities/sortByTimeStamp";
+
+const Home: NextPage<{ products: IProduct[] }> = ({ products }) => {
+    const dispatch = useDispatch();
+
+    function initVideoSwipers() {
+        const sliders = document.querySelectorAll('.channels_content .swiper');
+        sliders.forEach((el, i) => {
+            initSwiperSlider(`.swiper_${i + 1}`, `.swiper_${i + 1}-nav`, {
+                spaceBetween: 30,
+                autoplay: {
+                    pauseOnMouseEnter: true,
+                    disableOnInteraction: false,
+                },
+                speed: 2000,
+                breakpoints: {
+                    767.98: {
+                        slidesPerView: 2,
+                    },
+                    1169.98: {
+                        slidesPerView: 3,
+                    },
+                    1599.98: {
+                        slidesPerView: 4,
+                    }
+                }
+            })
+        })
+    }
+
+    useEffect(() => {
+        //add products to offers list
+        const offersProducts = products.filter((item) => item.discount);
+        dispatch(specialOfferProductsActions.addProducts(offersProducts));
+
+        //add products to newest list
+        const sortedProductsByTimeStamp = newestProductsFn(products);
+        dispatch(newestProductsActions.addProducts(sortedProductsByTimeStamp));
+        initInsightSwiper();
+        initVideoSwipers();
+        
+    }, [dispatch, products]);
+
+    return (
+        <div>
+            <HomeComponent />
+        </div>
+    );
+};
+
+export default Home;
+
+export const getStaticProps = async () => {
+    const productQuery = `*[_type=='product']`;
+    const products = await client.fetch(productQuery);
+    return {
+        props: {
+            products,
+        },
+    };
+};
