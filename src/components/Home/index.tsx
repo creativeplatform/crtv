@@ -5,7 +5,7 @@ const Home = () => {
                 <section className="hero section">
                     <div className="hero_bg">
                         <picture>
-                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                         </picture>
                     </div>
@@ -13,7 +13,7 @@ const Home = () => {
                         <h1 className="hero_title extra glitch" data-text="what's on-air?">what's on-air?</h1>
                         <div className="hero_media">
                             <picture>
-                                <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                 <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                             </picture>
                         </div>
@@ -30,7 +30,7 @@ const Home = () => {
                                             <svg width="84" height="93" viewBox="0 0 84 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     fillRule="evenodd"
-                                                    clip-rule="evenodd"
+                                                    clipRule="evenodd"
                                                     d="M83.5 46.5L0.5 92.5V0.5L83.5 46.5Z"
                                                     fill="currentColor"
                                                 />
@@ -38,7 +38,7 @@ const Home = () => {
                                         </a>
                                     </div>
                                     <picture>
-                                        <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                        <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                         <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="cover" />
                                     </picture>
                                 </div>
@@ -52,7 +52,7 @@ const Home = () => {
                                 <span className="avatar">
                                     <picture>
                                         <source
-                                            data-srcSet="img/placeholder.jpg"
+                                            data-srcset="img/placeholder.jpg"
                                             srcSet="img/placeholder.jpg"
                                             type="image/webp"
                                         />
@@ -76,31 +76,31 @@ const Home = () => {
                                         <span className="emoji">
                                             <span className="emoji_item">
                                                 <picture>
-                                                    <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                                     <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
                                                 </picture>
                                             </span>
                                             <span className="emoji_item">
                                                 <picture>
-                                                    <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                                     <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
                                                 </picture>
                                             </span>
                                             <span className="emoji_item">
                                                 <picture>
-                                                    <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                                     <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
                                                 </picture>
                                             </span>
                                             <span className="emoji_item">
                                                 <picture>
-                                                    <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                                     <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
                                                 </picture>
                                             </span>
                                             <span className="emoji_item">
                                                 <picture>
-                                                    <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                                     <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
                                                 </picture>
                                             </span>
@@ -129,7 +129,7 @@ const Home = () => {
                 <section className="channels section">
                     <div className="channels_bg">
                         <picture>
-                            <source data-srcSet="img/gradients/10.webp" srcSet="img/gradients/10.webp" type="image/webp" />
+                            <source data-srcset="img/gradients/10.webp" srcSet="img/gradients/10.webp" type="image/webp" />
                             <img className="lazy" data-src="img/gradients/10.png" src="img/gradients/10.png" alt="media" />
                         </picture>
                     </div>
@@ -223,7 +223,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -240,7 +240,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -265,7 +265,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -282,7 +282,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -307,7 +307,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -324,7 +324,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -349,7 +349,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -366,7 +366,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -401,7 +401,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -418,7 +418,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -443,7 +443,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -460,7 +460,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -485,7 +485,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -502,7 +502,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -527,7 +527,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -544,7 +544,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -579,7 +579,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -596,7 +596,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -621,7 +621,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -638,7 +638,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -663,7 +663,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -680,7 +680,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -705,7 +705,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -722,7 +722,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -765,7 +765,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -782,7 +782,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -807,7 +807,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -824,7 +824,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -849,7 +849,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -866,7 +866,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -891,7 +891,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -908,7 +908,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -943,7 +943,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -960,7 +960,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -985,7 +985,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1002,7 +1002,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1027,7 +1027,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1044,7 +1044,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1069,7 +1069,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1086,7 +1086,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1121,7 +1121,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1138,7 +1138,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1163,7 +1163,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1180,7 +1180,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1205,7 +1205,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1222,7 +1222,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1247,7 +1247,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1264,7 +1264,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1307,7 +1307,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1324,7 +1324,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1349,7 +1349,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1366,7 +1366,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1391,7 +1391,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1408,7 +1408,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1433,7 +1433,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1450,7 +1450,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1485,7 +1485,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1502,7 +1502,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1527,7 +1527,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1544,7 +1544,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1569,7 +1569,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1586,7 +1586,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1611,7 +1611,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1628,7 +1628,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1663,7 +1663,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1680,7 +1680,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1705,7 +1705,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1722,7 +1722,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1747,7 +1747,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1764,7 +1764,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1789,7 +1789,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1806,7 +1806,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1849,7 +1849,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1866,7 +1866,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1891,7 +1891,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1908,7 +1908,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1933,7 +1933,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1950,7 +1950,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1975,7 +1975,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -1992,7 +1992,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2027,7 +2027,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2044,7 +2044,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2069,7 +2069,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2086,7 +2086,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2111,7 +2111,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2128,7 +2128,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2153,7 +2153,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2170,7 +2170,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2205,7 +2205,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2222,7 +2222,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2247,7 +2247,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2264,7 +2264,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2289,7 +2289,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2306,7 +2306,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2331,7 +2331,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2348,7 +2348,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2385,7 +2385,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2402,7 +2402,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2427,7 +2427,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2444,7 +2444,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2469,7 +2469,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2486,7 +2486,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2511,7 +2511,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2528,7 +2528,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2563,7 +2563,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2580,7 +2580,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2605,7 +2605,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2622,7 +2622,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2647,7 +2647,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2664,7 +2664,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2689,7 +2689,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2706,7 +2706,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2741,7 +2741,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2758,7 +2758,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2783,7 +2783,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2800,7 +2800,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2825,7 +2825,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2842,7 +2842,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2867,7 +2867,7 @@ const Home = () => {
                                                         <a className="link eyeTrigger" href="#">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2884,7 +2884,7 @@ const Home = () => {
                                                         <span className="main_avatar">
                                                             <picture>
                                                                 <source
-                                                                    data-srcSet="img/placeholder.jpg"
+                                                                    data-srcset="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -2931,19 +2931,19 @@ const Home = () => {
                                 <span className="join_main-header_emoji" data-aos="fade-left">
                                     <span className="emoji emoji_item">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                                         </picture>
                                     </span>
                                     <span className="emoji emoji_item">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                                         </picture>
                                     </span>
                                     <span className="emoji emoji_item">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                                         </picture>
                                     </span>
@@ -2982,7 +2982,7 @@ const Home = () => {
                                 <div className="box_posts-item swiper-slide">
                                     <div className="media">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img
                                                 className="lazy"
                                                 data-src="img/placeholder.jpg"
@@ -3005,7 +3005,7 @@ const Home = () => {
                                 <div className="box_posts-item swiper-slide">
                                     <div className="media">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img
                                                 className="lazy"
                                                 data-src="img/placeholder.jpg"
@@ -3028,7 +3028,7 @@ const Home = () => {
                                 <div className="box_posts-item swiper-slide">
                                     <div className="media">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img
                                                 className="lazy"
                                                 data-src="img/placeholder.jpg"
@@ -3051,7 +3051,7 @@ const Home = () => {
                                 <div className="box_posts-item swiper-slide">
                                     <div className="media">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img
                                                 className="lazy"
                                                 data-src="img/placeholder.jpg"
@@ -3074,7 +3074,7 @@ const Home = () => {
                                 <div className="box_posts-item swiper-slide">
                                     <div className="media">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img
                                                 className="lazy"
                                                 data-src="img/placeholder.jpg"
@@ -3097,7 +3097,7 @@ const Home = () => {
                                 <div className="box_posts-item swiper-slide">
                                     <div className="media">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img
                                                 className="lazy"
                                                 data-src="img/placeholder.jpg"
@@ -3120,7 +3120,7 @@ const Home = () => {
                                 <div className="box_posts-item swiper-slide">
                                     <div className="media">
                                         <picture>
-                                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img
                                                 className="lazy"
                                                 data-src="img/placeholder.jpg"

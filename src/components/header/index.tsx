@@ -8,7 +8,7 @@ const Header = () => {
         <header className="header" data-page="streamers" data-page-parent="home">
             <div className="header_bg">
                 <picture>
-                    <source data-srcSet="imgss/gradients/10.webp" srcSet="imgss/gradients/10.webp" type="image/webp" />
+                    <source data-srcset="imgss/gradients/10.webp" srcSet="imgss/gradients/10.webp" type="image/webp" />
                     <img className="lazy" data-src="/imgs/gradients/10.png" src="/img/gradients/10.png" alt="media" />
                 </picture>
             </div>
@@ -301,7 +301,7 @@ const Header = () => {
                         USD
                         <span className="header_user-preference_country">
                             <picture>
-                                <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                 <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="USA" />
                             </picture>
                         </span>
