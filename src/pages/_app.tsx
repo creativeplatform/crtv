@@ -1,43 +1,24 @@
+import type { AppProps } from 'next/app'
 import 'tailwindcss/tailwind.css'
 import { ThemeProvider } from 'next-themes'
-import Web3Provider from '@/components/Web3Provider'
-import {
-	LivepeerConfig,
-	ThemeConfig,
-	createReactClient,
-	studioProvider,
-  } from '@livepeer/react';
-import fontFace from '../styles/fontFace'
-import { Global } from '@emotion/react'
+import Layout from "../components/layout/Layout";
+import Web3Provider from '../components/header/Web3Provider';
+// import '../styles/globals.css'
+import '../styles/preload.css';
+import '../styles/icomoon.css';
+import '../styles/libs.css';
+import '../styles/streamers.css';
 
-  const client = createReactClient({
-	provider: studioProvider({ apiKey: process.env.LIVEPEER_API_KEY }),
-  });
-   
-  const livepeerTheme: ThemeConfig = {
-	colors: {
-	  accent: 'rgb(236, 64, 122, 93)',
-	  containerBorderColor: 'rgba(22, 29, 47, 18)',
-	},
-	fonts: {
-	  display: 'Inter',
-	},
-	radii: {
-		slider: '4px',
-	},
-  };
-
-const App = ({ Component, pageProps }) => {
-	return (
-		<ThemeProvider attribute="class">
-			<Global styles={fontFace} />
-			<Web3Provider>
-				<LivepeerConfig client={client} theme={livepeerTheme}>
-					<Component {...pageProps} />
-				</LivepeerConfig>
-			</Web3Provider>
-		</ThemeProvider>
-	)
+function App({ Component, pageProps }: AppProps) {
+    return (
+        <ThemeProvider attribute="class">
+            <Web3Provider>
+                <Layout>
+                    <Component {...pageProps} />
+                </Layout>
+            </Web3Provider>
+        </ThemeProvider>
+    );
 }
 
-export default App
+export default App;
