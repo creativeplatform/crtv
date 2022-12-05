@@ -12,7 +12,7 @@
  **/
 import React from 'react';
 import ReactDOM from 'react-dom';
-import {TextTicker, MediaTicker} from "./components/Ticker";
+import {TextTicker, MediaTicker} from "./modules/Ticker";
 
 document.addEventListener('DOMContentLoaded', () => {
     renderTextTicker();
