@@ -135,7 +135,7 @@ export function toggleCartPopup() {
     const header = document.querySelector('.header');
 
     function closePopup() {
-        popup.classList.remove('visible');
+        popup?.classList?.remove('visible');
     }
 
     triggers.forEach(el => {
@@ -147,9 +147,9 @@ export function toggleCartPopup() {
         })
     })
 
-    popupBackdrop.addEventListener('click', e => {
-        closePopup()
-    })
+    // popupBackdrop.addEventListener('click', e => {
+    //     closePopup()
+    // })
 
     window.addEventListener('resize', closePopup);
     window.addEventListener('scroll', () => {

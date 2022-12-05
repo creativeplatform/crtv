@@ -8,8 +8,8 @@ const Header = () => {
         <header className="header" data-page="streamers" data-page-parent="home">
             <div className="header_bg">
                 <picture>
-                    <source data-srcset="imgss/gradients/10.webp" srcSet="imgss/gradients/10.webp" type="image/webp" />
-                    <img className="lazy" data-src="/imgs/gradients/10.png" src="/img/gradients/10.png" alt="media" />
+                    <source data-srcset="img/gradients/10.webp" srcSet="img/gradients/10.webp" type="image/webp" />
+                    <img className="lazy" data-src="img/gradients/10.webp" src="img/gradients/10.webp" alt="media" />
                 </picture>
             </div>
             <div className="container d-flex">
@@ -74,9 +74,9 @@ const Header = () => {
                             </div>
                         </li>
                         <li className="header_nav-list_item">
-                            <a className="nav-item nav-link" href="about" data-page="about" data-single="true">
+                            <Link className="nav-item nav-link" href="about" data-page="about" data-single="true">
                                 <span className="nav-item_text">About</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="header_nav-list_item dropdown">
                             <a

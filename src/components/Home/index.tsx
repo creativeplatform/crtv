@@ -2,12 +2,12 @@ import { Player } from "@livepeer/react";
 
 const Home = () => {
     return (
-        <div>
+        <>
             <main>
                 <section className="hero section">
                     <div className="hero_bg">
                         <picture>
-                            <source data-srcset="img/placeholder.png" srcSet="img/placeholder.jpg" type="image/webp" />
+                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                         </picture>
                     </div>
@@ -15,7 +15,7 @@ const Home = () => {
                         <h1 className="hero_title extra glitch" data-text="what's on-air?">what's on-air?</h1>
                         <div className="hero_media">
                             <picture>
-                                <source data-srcset="img/radiate_warrior.png" srcSet="img/radiate_warrior.png" type="image/webp" />
+                                <source data-srcSet="img/radiate_warrior.png" srcSet="img/radiate_warrior.png" type="image/webp" />
                                 <img className="lazy" data-src="img/radiate_warrior.png" src="img/radiate_warrior.png" alt="media" />
                             </picture>
                         </div>
@@ -235,11 +235,11 @@ const Home = () => {
                                                                     showPipButton
                                                                     controls={{
                                                                         autohide: 3000,
-                                                                      }}
-                                                                      theme={{
+                                                                    }}
+                                                                    theme={{
                                                                         borderStyles: { containerBorderStyle: 'hidden' },
                                                                         radii: { containerBorderRadius: '10px' },
-                                                                      }}
+                                                                    }}
                                                                 />
                                                             </picture>
                                                         </a>
@@ -3167,7 +3167,7 @@ const Home = () => {
                     <span className="ticker-item">Create a new Brand</span>
                 </div>
             </div>
-        </div>
+        </>
     );
 }
 
