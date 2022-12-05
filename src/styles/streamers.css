@@ -18,7 +18,7 @@
     outline: 0;
     scrollbar-width: auto;
     scrollbar-color: #f1b84b #212122;
-    cursor: none!important
+    /* cursor: none!important */
 }
 
 html {
