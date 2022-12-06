@@ -18,13 +18,15 @@ import { initSwiperSlider, initInsightSwiper } from "../../public/scripts/module
 // const Brands = dynamic(() => import("../components/brands"));
 // const Banners = dynamic(() => import("../components/banners"), { ssr: false });
 
-import HomeComponent from "../components/Home/index";
+import HomeComponent from "../components/home";
+// import DynamicStyle from "../components/partial/Style";
 
-import { IProduct } from "../lib/types/products";
-import { newestProductsFn } from "../utilities/sortByTimeStamp";
+// import { IProduct } from "../lib/types/products";
+// import { newestProductsFn } from "../utilities/sortByTimeStamp";
 
-const Home: NextPage<{ products: IProduct[] }> = ({ products }) => {
-    const dispatch = useDispatch();
+const Home: NextPage<{}> = () => {
+    // const dispatch = useDispatch();
+    // console.log("HomeComponent", HomeComponent.style);
 
     function initVideoSwipers() {
         const sliders = document.querySelectorAll('.channels_content .swiper');
@@ -53,18 +55,20 @@ const Home: NextPage<{ products: IProduct[] }> = ({ products }) => {
 
     useEffect(() => {
         //add products to offers list
-        const offersProducts = products.filter((item) => item.discount);
-        dispatch(specialOfferProductsActions.addProducts(offersProducts));
+        // const offersProducts = products.filter((item) => item.discount);
+        // dispatch(specialOfferProductsActions.addProducts(offersProducts));
 
-        //add products to newest list
-        const sortedProductsByTimeStamp = newestProductsFn(products);
-        dispatch(newestProductsActions.addProducts(sortedProductsByTimeStamp));
+        // //add products to newest list
+        // const sortedProductsByTimeStamp = newestProductsFn(products);
+        // dispatch(newestProductsActions.addProducts(sortedProductsByTimeStamp));
         initInsightSwiper();
         initVideoSwipers();
-    }, [dispatch, products]);
+    });
 
     return (
-        <HomeComponent />
+        <>
+            <HomeComponent />
+        </>
     );
 };
 

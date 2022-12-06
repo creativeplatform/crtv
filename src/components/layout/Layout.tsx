@@ -10,7 +10,6 @@ import Footer from "../footer";
 import Scripts from "./Scripts";
 import dynamic from "next/dynamic";
 
-
 const Layout: React.FC<{ children?: React.ReactNode }> = ({ children }) => {
     const { runScripts } = Scripts();
     useEffect(() => {

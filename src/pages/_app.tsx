@@ -10,11 +10,11 @@ import 'tailwindcss/tailwind.css'
 import { ThemeProvider } from 'next-themes'
 import Layout from "../components/layout/Layout";
 import Web3Provider from '../components/header/Web3Provider';
-// import '../styles/globals.css'
 import '../styles/preload.css';
 import '../styles/icomoon.css';
 import '../styles/libs.css';
 import '../styles/streamers.css';
+import Head from 'next/head';
 
 const livepeerClient = createReactClient({
     provider: studioProvider({
@@ -32,12 +32,17 @@ const theme: ThemeConfig = {
     },
 };
 
-function App({ Component, pageProps }: AppProps) {
+function App({ Component, pageProps }) {
+    // console.log(Component.style);
     return (
         <ThemeProvider attribute="class">
             <Web3Provider>
                 <LivepeerConfig client={livepeerClient} theme={theme}>
+                    <Head>
+                        <title>{Component.title}</title>
+                    </Head>
                     <Layout>
+                        {/* <Style /> */}
                         <Component {...pageProps} />
                     </Layout>
                 </LivepeerConfig>
