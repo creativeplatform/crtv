@@ -17,7 +17,7 @@ const Header = () => {
                     <span className="header_logo-wrapper">
                         <Image src="/svg/creative-logo.svg" width={150} height={150} alt="Creative Logo" />
                     </span>
-                    <span className="text">CREATIVETV</span>
+                    <span className="text">CREATIVE tv</span>
                 </a>
                 <nav className="header_nav text--medium text--md collapse" id="headerMenu">
                     <ul className="header_nav-list">

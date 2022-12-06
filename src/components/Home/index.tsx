@@ -1,5 +1,7 @@
+import React from 'react'
 import { Player } from "@livepeer/react";
 import styles from "./home.module.css";
+
 
 export default function Home() {
     return (
@@ -8,16 +10,16 @@ export default function Home() {
                 <section className={[styles['hero'], 'section'].join(' ')}>
                     <div className={styles['hero_bg']}>
                         <picture>
-                            <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                            <img className={'lazy'} data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                            {/* <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" /> */}
+                            <img className={'lazy'} data-src="img/index/radiate_warrior.png" src="img/index/radiate_warrior.png" alt="media" />
                         </picture>
                     </div>
                     <div className={'container'}>
-                        <h1 className={[styles['hero_title'], 'extra', 'glitch'].join(' ')} data-text="what's on-air?">what's on-air?</h1>
+                        <h1 className={[styles['hero_title'], 'extra', 'glitch'].join(' ')} data-text="what's on-air?">what&apos;s on-air?</h1>
                         <div className={styles['hero_media']}>
                             <picture>
-                                <source data-srcSet="img/radiate_warrior.png" srcSet="img/radiate_warrior.png" type="image/webp" />
-                                <img className={'lazy'} data-src="img/radiate_warrior.png" src="img/radiate_warrior.png" alt="media" />
+                                <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                <img className={'lazy'} data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                             </picture>
                         </div>
                     </div>
@@ -26,7 +28,14 @@ export default function Home() {
                     <div className="container">
                         <div className="about_main">
                             <div className="media video">
-                                <div className="cover">
+                            <Player
+                                    title="Agent 327: Operation Barbershop"
+                                    playbackId="6d7el73r1y12chxr"
+                                    showPipButton
+                                    autoPlay
+                                    muted
+                                />
+                                {/* <div className="cover">
                                     <div className="media_overlay">
                                         <span className="label h4">live</span>
                                         <a className="play" href="#">
@@ -44,12 +53,7 @@ export default function Home() {
                                         <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                         <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="cover" />
                                     </picture>
-                                </div>
-                                <Player
-                                    title="Agent 327: Operation Barbershop"
-                                    playbackId="6d7el73r1y12chxr"
-                                    showPipButton
-                                />
+                                </div> */}
                             </div>
                             <div className="description">
                                 <span className="avatar">
@@ -222,15 +226,7 @@ export default function Home() {
                                         <div className="swiper_1 swiper">
                                             <div className="swiper-wrapper">
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <Player
+                                                    <Player
                                                                     title="Agent 327: Operation Barbershop"
                                                                     playbackId="6d7el73r1y12chxr"
                                                                     showPipButton
@@ -242,9 +238,6 @@ export default function Home() {
                                                                         radii: { containerBorderRadius: '10px' },
                                                                     }}
                                                                 />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
                                                     <div className="main">
                                                         <span className="main_avatar">
                                                             <picture>
@@ -3048,7 +3041,7 @@ export default function Home() {
                                     </div>
                                     <div className="main">
                                         <a className="main_title h4" href="post-sidebar.html"
-                                        >New 'Paranormal Activity' Film and Documentary to Release on Studio</a
+                                        >New &apos;Paranormal Activity&apos; Film and Documentary to Release on Studio</a
                                         >
                                         <ul className="main_meta meta">
                                             <li className="meta_item">28 Aug 2021</li>
@@ -3094,7 +3087,7 @@ export default function Home() {
                                     </div>
                                     <div className="main">
                                         <a className="main_title h4" href="post-sidebar.html"
-                                        >First-Time ‘Funfoot’ Streamer Discovers Glitch for Speedrunners</a
+                                        >First-Time &apos;Funfoot&apos; Streamer Discovers Glitch for Speedrunners</a
                                         >
                                         <ul className="main_meta meta">
                                             <li className="meta_item">28 Aug 2021</li>
@@ -3140,7 +3133,7 @@ export default function Home() {
                                     </div>
                                     <div className="main">
                                         <a className="main_title h4" href="post-sidebar.html"
-                                        >'Attack on Titan' Sets Guiness World Record for Largest Comic Book</a
+                                        >&apos;Attack on Titan&apos; Sets Guiness World Record for Largest Comic Book</a
                                         >
                                         <ul className="main_meta meta">
                                             <li className="meta_item">28 Aug 2021</li>
