@@ -1,5 +1,5 @@
 import { useTheme } from 'next-themes'
-import { APP_NAME } from '@/lib/consts'
+import { APP_NAME } from '../../lib/consts'
 import { createClient, WagmiConfig } from 'wagmi'
 import { ConnectKitProvider, getDefaultClient } from 'connectkit'
 
