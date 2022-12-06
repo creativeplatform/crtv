@@ -1,22 +1,23 @@
 import { Player } from "@livepeer/react";
+import styles from "./home.module.css";
 
-const Home = () => {
+export default function Home() {
     return (
         <>
             <main>
-                <section className="hero section">
-                    <div className="hero_bg">
+                <section className={[styles['hero'], 'section'].join(' ')}>
+                    <div className={styles['hero_bg']}>
                         <picture>
                             <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                            <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                            <img className={'lazy'} data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                         </picture>
                     </div>
-                    <div className="container">
-                        <h1 className="hero_title extra glitch" data-text="what's on-air?">what's on-air?</h1>
-                        <div className="hero_media">
+                    <div className={'container'}>
+                        <h1 className={[styles['hero_title'], 'extra', 'glitch'].join(' ')} data-text="what's on-air?">what's on-air?</h1>
+                        <div className={styles['hero_media']}>
                             <picture>
                                 <source data-srcSet="img/radiate_warrior.png" srcSet="img/radiate_warrior.png" type="image/webp" />
-                                <img className="lazy" data-src="img/radiate_warrior.png" src="img/radiate_warrior.png" alt="media" />
+                                <img className={'lazy'} data-src="img/radiate_warrior.png" src="img/radiate_warrior.png" alt="media" />
                             </picture>
                         </div>
                     </div>
@@ -3170,5 +3171,3 @@ const Home = () => {
         </>
     );
 }
-
-export default Home;

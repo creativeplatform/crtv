@@ -1,4 +1,5 @@
-const Home = () => {
+import styles from "./about.module.css";
+export default function About() {
     return (
         <>
             <main>
@@ -659,5 +660,3 @@ const Home = () => {
         </>
     );
 }
-
-export default Home;
