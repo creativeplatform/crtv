@@ -8,75 +8,28 @@ const Header = () => {
         <header className="header" data-page="streamers" data-page-parent="home">
             <div className="header_bg">
                 <picture>
-                    <source data-srcset="imgss/gradients/10.webp" srcSet="imgss/gradients/10.webp" type="image/webp" />
-                    <img className="lazy" data-src="/imgs/gradients/10.png" src="/img/gradients/10.png" alt="media" />
+                    <source data-srcset="img/gradients/10.webp" srcSet="img/gradients/10.webp" type="image/webp" />
+                    <img className="lazy" data-src="img/gradients/10.webp" src="img/gradients/10.webp" alt="media" />
                 </picture>
             </div>
             <div className="container d-flex">
                 <a className="header_logo logo" href="#">
                     <span className="header_logo-wrapper">
-                        <img src="/svg/logo--black.svg" alt="UpCreators" />
+                        <Image src="/svg/creative-logo.svg" width={150} height={150} alt="Creative Logo" />
                     </span>
-                    <span className="text">Creators</span>
+                    <span className="text">CREATIVETV</span>
                 </a>
                 <nav className="header_nav text--medium text--md collapse" id="headerMenu">
                     <ul className="header_nav-list">
-                        <li className="header_nav-list_item dropdown">
-                            <Link
-                                className="nav-link nav-item dropdown-toggle"
-                                href="/"
-                                data-bs-toggle="collapse"
-                                data-bs-target="#homeMenu"
-                                data-trigger="dropdown"
-                                data-main-link="true"
-                                aria-expanded="false"
-                                aria-controls="homeMenu"
-                                data-page="home"
-                                data-page-parent="home"
-                            >
-                                <span className="nav-item_text"> Home </span>
-                                <span className="icon icon-caret-down-solid"></span>
+                    <li className="header_nav-list_item">
+                            <Link className="nav-item nav-link" href="about" data-page="about" data-single="true">
+                                <span className="nav-item_text">About</span>
                             </Link>
-                            <div className="dropdown-menu collapse" id="homeMenu">
-                                <ul className="dropdown-list">
-                                    <li className="list-item">
-                                        <Link
-                                            className="dropdown-item nav-item"
-                                            data-page="home"
-                                            data-page-parent="home"
-                                            href="/"
-                                            data-main="true"
-                                        >
-                                            Home Agency
-                                        </Link>
-                                    </li>
-                                    <li className="list-item">
-                                        <Link
-                                            className="dropdown-item nav-item"
-                                            data-page="streamers"
-                                            data-page-parent="home"
-                                            href="/"
-                                        >
-                                            Home Streamers
-                                        </Link>
-                                    </li>
-                                    <li className="list-item">
-                                        <a
-                                            className="dropdown-item nav-item"
-                                            data-page="home-shop"
-                                            data-page-parent="home"
-                                            href="index-shop.html"
-                                        >
-                                            Home Shop
-                                        </a>
-                                    </li>
-                                </ul>
-                            </div>
                         </li>
                         <li className="header_nav-list_item">
-                            <a className="nav-item nav-link" href="about" data-page="about" data-single="true">
+                            <Link className="nav-item nav-link" href="about" data-page="about" data-single="true">
                                 <span className="nav-item_text">About</span>
-                            </a>
+                            </Link>
                         </li>
                         <li className="header_nav-list_item dropdown">
                             <a

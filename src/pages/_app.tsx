@@ -3,7 +3,7 @@ import {
     ThemeConfig,
     createReactClient,
     studioProvider,
-  } from '@livepeer/react';
+} from '@livepeer/react';
 import * as React from 'react';
 import type { AppProps } from 'next/app'
 import 'tailwindcss/tailwind.css'
@@ -18,28 +18,28 @@ import '../styles/streamers.css';
 
 const livepeerClient = createReactClient({
     provider: studioProvider({
-      apiKey: process.env.NEXT_PUBLIC_STUDIO_API_KEY,
+        apiKey: process.env.NEXT_PUBLIC_STUDIO_API_KEY,
     }),
-  });
-   
-  const theme: ThemeConfig = {
+});
+
+const theme: ThemeConfig = {
     colors: {
-      accent: '#EC407A',
-      containerBorderColor: '#EC407A',
+        accent: '#EC407A',
+        containerBorderColor: '#EC407A',
     },
     fonts: {
-      display: 'Inter',
+        display: 'Inter',
     },
-  };
+};
 
 function App({ Component, pageProps }: AppProps) {
     return (
         <ThemeProvider attribute="class">
             <Web3Provider>
                 <LivepeerConfig client={livepeerClient} theme={theme}>
-                <Layout>
-                    <Component {...pageProps} />
-                </Layout>
+                    <Layout>
+                        <Component {...pageProps} />
+                    </Layout>
                 </LivepeerConfig>
             </Web3Provider>
         </ThemeProvider>

@@ -7,9 +7,7 @@ import { specialOfferProductsActions } from "../store/specialOfferProducts-slice
 import { newestProductsActions } from "../store/newestProduct-slice";
 
 import { client } from "../lib/client";
-// import "../../public/scripts/streamers";
-
-import {initSwiperSlider, initInsightSwiper} from "../../public/scripts/modules/slider";
+import { initSwiperSlider, initInsightSwiper } from "../../public/scripts/modules/slider";
 
 
 // import Benefits from "../components/Benefits";
@@ -20,7 +18,7 @@ import {initSwiperSlider, initInsightSwiper} from "../../public/scripts/modules/
 // const Brands = dynamic(() => import("../components/brands"));
 // const Banners = dynamic(() => import("../components/banners"), { ssr: false });
 
-import HomeComponent from "../components/Home";
+import HomeComponent from "../components/home";
 
 import { IProduct } from "../lib/types/products";
 import { newestProductsFn } from "../utilities/sortByTimeStamp";
@@ -63,13 +61,10 @@ const Home: NextPage<{ products: IProduct[] }> = ({ products }) => {
         dispatch(newestProductsActions.addProducts(sortedProductsByTimeStamp));
         initInsightSwiper();
         initVideoSwipers();
-        
     }, [dispatch, products]);
 
     return (
-        <div>
-            <HomeComponent />
-        </div>
+        <HomeComponent />
     );
 };
 

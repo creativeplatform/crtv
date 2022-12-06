@@ -1,229 +1,298 @@
 const Home = () => {
     return (
-        <div>
+        <>
             <main>
-                <section className="hero section">
-                    <div className="hero_bg">
-                        <picture>
-                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                            <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                        </picture>
-                    </div>
+                <section className="hero">
                     <div className="container">
-                        <h1 className="hero_title extra glitch" data-text="what's on-air?">what's on-air?</h1>
+                        <div className="hero_main">
+                            <div className="hero_main-icon rotate shape">
+                                <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M42.993 69L34.5 51.2698L26.007 69L16.1104 64.9008L22.6419 46.3582L4.09932 52.8899L0 42.993L17.7302 34.5L0 26.007L4.09932 16.1103L22.6419 22.6418L16.1104 4.09921L26.007 0L34.5 17.7302L42.993 0L52.8899 4.09921L46.3582 22.6418L64.9008 16.1103L69 26.007L51.2698 34.5L69 42.993L64.9008 52.8899L46.3582 46.3582L52.8899 64.9008L42.993 69Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
+                            </div>
+                            <h1 className="hero_main-title outlined outlined--black" data-aos="fade-left">we do</h1>
+                            <h2 className="hero_main-subtitle" data-aos="fade-left" data-aos-delay="50">Carefully selected and engaging content</h2>
+                            <p className="hero_main-text text--md" data-aos="fade-left" data-aos-delay="100">
+                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum et malesuada fames ac ante ipsum primis in
+                                faucibus. Nam massa ante, placerat sit amet augue id, ultrices faucibus
+                            </p>
+                        </div>
                         <div className="hero_media">
                             <picture>
-                                <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
+                                <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                <img
+                                    className="lazy"
+                                    data-src="img/placeholder.jpg"
+                                    src="img/placeholder.jpg"
+                                    alt="Carefully selected and engaging content"
+                                />
                             </picture>
+
+                            <a className="circular eyeTrigger videoTrigger" href="#" data-video="SfMT4Agg8Xw">
+                                <i className="icon-play"></i>
+                                <span className="circular_text rotate slower" data-text="Watch Showreel . Watch Showreel"></span>
+                            </a>
                         </div>
                     </div>
                 </section>
-                <div className="about section">
+                <div className="services section">
                     <div className="container">
-                        <div className="about_main">
-                            <div className="media video">
+                        <ul className="services_list">
+                            <li className="services_list-item">
                                 <div className="cover">
-                                    <div className="media_overlay">
-                                        <span className="label h4">live</span>
-                                        <a className="play" href="#">
-                                            <svg width="84" height="93" viewBox="0 0 84 93" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                                <path
-                                                    fillRule="evenodd"
-                                                    clipRule="evenodd"
-                                                    d="M83.5 46.5L0.5 92.5V0.5L83.5 46.5Z"
-                                                    fill="currentColor"
-                                                />
-                                            </svg>
-                                        </a>
+                                    <div className="cover_shape">
+                                        <img src="svg/shapes/28.svg" alt="media" />
                                     </div>
-                                    <picture>
-                                        <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                        <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="cover" />
-                                    </picture>
+                                    <h4 className="cover_title">Influencer Marketing <span className="linebreak">SMM</span></h4>
                                 </div>
-                                <iframe
-                                    src="https://www.youtube.com/embed/sRE5iQCdRvE?controls=0"
-                                    title="YouTube video player"
-                                    allowFullScreen={true}
-                                ></iframe>
-                            </div>
-                            <div className="description">
-                                <span className="avatar">
-                                    <picture>
-                                        <source
-                                            data-srcset="img/placeholder.jpg"
-                                            srcSet="img/placeholder.jpg"
-                                            type="image/webp"
-                                        />
-                                        <img
-                                            className="lazy"
-                                            data-src="img/placeholder.jpg"
-                                            src="img/placeholder.jpg"
-                                            alt="avatar"
-                                        />
-                                    </picture>
-                                </span>
-                                <div className="main">
-                                    <a className="main_title h4" href="#">Ratings & Releases</a>
-                                    <ul className="main_meta meta">
-                                        <li className="meta_item">1 Aug 2021</li>
-                                        <li className="meta_item">Brands</li>
-                                        <li className="meta_item">Stream by John D</li>
-                                    </ul>
-                                    <p className="main_text text--md">
-                                        Fusce dapibus ante vitae
-                                        <span className="emoji">
-                                            <span className="emoji_item">
-                                                <picture>
-                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                                    <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
-                                                </picture>
-                                            </span>
-                                            <span className="emoji_item">
-                                                <picture>
-                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                                    <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
-                                                </picture>
-                                            </span>
-                                            <span className="emoji_item">
-                                                <picture>
-                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                                    <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
-                                                </picture>
-                                            </span>
-                                            <span className="emoji_item">
-                                                <picture>
-                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                                    <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
-                                                </picture>
-                                            </span>
-                                            <span className="emoji_item">
-                                                <picture>
-                                                    <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                                    <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="fire" />
-                                                </picture>
-                                            </span>
-                                        </span>
-                                        augue aliquet dignissim. Donec mattis scelerisque turpis, quis pharetra nulla. Vivamus mauris ante,
-                                        semper quis augue ultricies, lacinia eleifend leo
-                                    </p>
+                                <div className="content">
+                                    <div className="content_bg">
+                                        <picture>
+                                            <source
+                                                data-srcSet="img/placeholder.jpg"
+                                                srcSet="img/placeholder.jpg"
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                className="lazy"
+                                                data-src="img/placeholder.jpg"
+                                                src="img/placeholder.jpg"
+                                                alt="Influencer Marketing SMM"
+                                            />
+                                        </picture>
+                                        <span className="content_bg-overlay"></span>
+                                    </div>
+                                    <div className="content_main">
+                                        <h4 className="content_main-title">Influencer Marketing <span className="linebreak">SMM</span></h4>
+                                        <p className="content_main-text">
+                                            Curabitur non erat purus. Cras eu lorem et magna facilisis faucibus vel tempor purus. Donec eu lorem
+                                            rutrum, condimentum sem feugiat, egestas
+                                        </p>
+                                        <a className="content_main-btn btn btn--accent btn--arrow" href="#"
+                                        >Read More <i className="icon-arrow-right icon"></i
+                                        ></a>
+                                    </div>
                                 </div>
-                            </div>
-                        </div>
-                        <div className="about_secondary">
-                            <div className="about_secondary-row h1">
-                                Strike. <span className="highlight" data-aos="fade-left">Watch.</span> Brand. Challenge.
-                            </div>
-                            <div className="about_secondary-row h1">
-                                Brand.
-                                <span className="highlight highlight--purple" data-aos="fade-left" data-aos-delay="50"> Stream.</span> Create.
-                                Inspire. Dream.
-                            </div>
-                            <div className="about_secondary-row h1">
-                                Stream. <span className="highlight" data-aos="fade-left" data-aos-delay="100">Create.</span> Stars. Watch. Reinvent.
-                            </div>
-                        </div>
+                            </li>
+                            <li className="services_list-item">
+                                <div className="cover">
+                                    <div className="cover_shape">
+                                        <img src="svg/shapes/24.svg" alt="media" />
+                                    </div>
+                                    <h4 className="cover_title">Visual Identity Photo and Video</h4>
+                                </div>
+                                <div className="content">
+                                    <div className="content_bg">
+                                        <picture>
+                                            <source
+                                                data-srcSet="img/placeholder.jpg"
+                                                srcSet="img/placeholder.jpg"
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                className="lazy"
+                                                data-src="img/placeholder.jpg"
+                                                src="img/placeholder.jpg"
+                                                alt="Visual Identity Photo and Video"
+                                            />
+                                        </picture>
+                                        <span className="content_bg-overlay"></span>
+                                    </div>
+                                    <div className="content_main">
+                                        <h4 className="content_main-title">Visual Identity Photo and Video</h4>
+                                        <p className="content_main-text">
+                                            Curabitur non erat purus. Cras eu lorem et magna facilisis faucibus vel tempor purus. Donec eu lorem
+                                            rutrum, condimentum sem feugiat, egestas
+                                        </p>
+                                        <a className="content_main-btn btn btn--accent btn--arrow" href="#"
+                                        >Read More <i className="icon-arrow-right icon"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="services_list-item">
+                                <div className="cover">
+                                    <div className="cover_shape">
+                                        <img src="svg/shapes/13.svg" alt="media" />
+                                    </div>
+                                    <h4 className="cover_title">Engaging Product Shots and Campaigns</h4>
+                                </div>
+                                <div className="content">
+                                    <div className="content_bg">
+                                        <picture>
+                                            <source
+                                                data-srcSet="img/placeholder.jpg"
+                                                srcSet="img/placeholder.jpg"
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                className="lazy"
+                                                data-src="img/placeholder.jpg"
+                                                src="img/placeholder.jpg"
+                                                alt="Engaging Product Shots and Campaigns"
+                                            />
+                                        </picture>
+                                        <span className="content_bg-overlay"></span>
+                                    </div>
+                                    <div className="content_main">
+                                        <h4 className="content_main-title">Engaging Product Shots and Campaigns</h4>
+                                        <p className="content_main-text">
+                                            Curabitur non erat purus. Cras eu lorem et magna facilisis faucibus vel tempor purus. Donec eu lorem
+                                            rutrum, condimentum sem feugiat, egestas
+                                        </p>
+                                        <a className="content_main-btn btn btn--accent btn--arrow" href="#"
+                                        >Read More <i className="icon-arrow-right icon"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="services_list-item">
+                                <div className="cover">
+                                    <div className="cover_shape">
+                                        <img src="svg/shapes/03.svg" alt="media" />
+                                    </div>
+                                    <h4 className="cover_title">Copywriting and optimization</h4>
+                                </div>
+                                <div className="content">
+                                    <div className="content_bg">
+                                        <picture>
+                                            <source
+                                                data-srcSet="img/placeholder.jpg"
+                                                srcSet="img/placeholder.jpg"
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                className="lazy"
+                                                data-src="img/placeholder.jpg"
+                                                src="img/placeholder.jpg"
+                                                alt="Copywriting and optimization"
+                                            />
+                                        </picture>
+                                        <span className="content_bg-overlay"></span>
+                                    </div>
+                                    <div className="content_main">
+                                        <h4 className="content_main-title">Copywriting and optimization</h4>
+                                        <p className="content_main-text">
+                                            Curabitur non erat purus. Cras eu lorem et magna facilisis faucibus vel tempor purus. Donec eu lorem
+                                            rutrum, condimentum sem feugiat, egestas
+                                        </p>
+                                        <a className="content_main-btn btn btn--accent btn--arrow" href="#"
+                                        >Read More <i className="icon-arrow-right icon"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="services_list-item">
+                                <div className="cover">
+                                    <div className="cover_shape">
+                                        <img src="svg/shapes/04.svg" alt="media" />
+                                    </div>
+                                    <h4 className="cover_title">Viral Campaigns and Live Events</h4>
+                                </div>
+                                <div className="content">
+                                    <div className="content_bg">
+                                        <picture>
+                                            <source
+                                                data-srcSet="img/placeholder.jpg"
+                                                srcSet="img/placeholder.jpg"
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                className="lazy"
+                                                data-src="img/placeholder.jpg"
+                                                src="img/placeholder.jpg"
+                                                alt="Viral Campaigns and Live Events"
+                                            />
+                                        </picture>
+                                        <span className="content_bg-overlay"></span>
+                                    </div>
+                                    <div className="content_main">
+                                        <h4 className="content_main-title">Viral Campaigns and Live Events</h4>
+                                        <p className="content_main-text">
+                                            Curabitur non erat purus. Cras eu lorem et magna facilisis faucibus vel tempor purus. Donec eu lorem
+                                            rutrum, condimentum sem feugiat, egestas
+                                        </p>
+                                        <a className="content_main-btn btn btn--accent btn--arrow" href="#"
+                                        >Read More <i className="icon-arrow-right icon"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </li>
+                            <li className="services_list-item">
+                                <div className="cover">
+                                    <div className="cover_shape">
+                                        <img src="svg/shapes/07.svg" alt="media" />
+                                    </div>
+                                    <h4 className="cover_title">Content Strategy and scheduling</h4>
+                                </div>
+                                <div className="content">
+                                    <div className="content_bg">
+                                        <picture>
+                                            <source
+                                                data-srcSet="img/placeholder.jpg"
+                                                srcSet="img/placeholder.jpg"
+                                                type="image/webp"
+                                            />
+                                            <img
+                                                className="lazy"
+                                                data-src="img/placeholder.jpg"
+                                                src="img/placeholder.jpg"
+                                                alt="Content Strategy and scheduling"
+                                            />
+                                        </picture>
+                                        <span className="content_bg-overlay"></span>
+                                    </div>
+                                    <div className="content_main">
+                                        <h4 className="content_main-title">Content Strategy and scheduling</h4>
+                                        <p className="content_main-text">
+                                            Curabitur non erat purus. Cras eu lorem et magna facilisis faucibus vel tempor purus. Donec eu lorem
+                                            rutrum, condimentum sem feugiat, egestas
+                                        </p>
+                                        <a className="content_main-btn btn btn--accent btn--arrow" href="#"
+                                        >Read More <i className="icon-arrow-right icon"></i
+                                        ></a>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-                <section className="channels section">
-                    <div className="channels_bg">
-                        <picture>
-                            <source data-srcset="img/gradients/10.webp" srcSet="img/gradients/10.webp" type="image/webp" />
-                            <img className="lazy" data-src="img/gradients/10.png" src="img/gradients/10.png" alt="media" />
-                        </picture>
-                    </div>
+
+                <section className="cases section @@class">
                     <div className="container">
                         <div className="section_nav">
                             <h3 className="section_nav-title">
                                 <i className="icon-bold-cross"></i>
-
-                                Live Channels
+                                Featured cases
                             </h3>
                             <div className="section_nav-controls">
                                 <span className="divider"></span>
+                                <div className="section_nav-controls_btns">
+                                    <button className="link splide__arrow--prev" type="button" aria-label="Previous slide">
+                                        <i className="icon-angle-left"></i>
+                                    </button>
+                                    <button className="link splide__arrow--next" type="button" aria-label="Next slide">
+                                        <i className="icon-angle-right"></i>
+                                    </button>
+                                </div>
                             </div>
                         </div>
-                        <div className="channels_content">
-                            <ul className="channels_content-nav nav nav-tabs tags" role="tablist">
-                                <li className="nav-item h4" role="presentation">
-                                    <div
-                                        className="nav-link tags_item white active"
-                                        id="games-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#games"
-                                        role="tab"
-                                        aria-selected="true"
-                                    >
-                                        Games
-                                    </div>
-                                </li>
-                                <li className="nav-item h4" role="presentation">
-                                    <div
-                                        className="nav-link tags_item white"
-                                        id="matches-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#matches"
-                                        role="tab"
-                                        aria-selected="false"
-                                    >
-                                        Live Matches
-                                    </div>
-                                </li>
-                                <li className="nav-item h4" role="presentation">
-                                    <div
-                                        className="nav-link tags_item white"
-                                        id="chatting-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#chatting"
-                                        role="tab"
-                                        aria-selected="false"
-                                    >
-                                        Chatting
-                                    </div>
-                                </li>
-                                <li className="nav-item h4" role="presentation">
-                                    <div
-                                        className="nav-link tags_item white"
-                                        id="challenges-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#challenges"
-                                        role="tab"
-                                        aria-selected="false"
-                                    >
-                                        Challenges
-                                    </div>
-                                </li>
-                                <li className="nav-item h4" role="presentation">
-                                    <div
-                                        className="nav-link tags_item white"
-                                        id="rates-tab"
-                                        data-bs-toggle="tab"
-                                        data-bs-target="#rates"
-                                        role="tab"
-                                        aria-selected="false"
-                                    >
-                                        Rates
-                                    </div>
-                                </li>
-                            </ul>
-                            <div className="channels_content-display tab-content" id="videoTabs">
-                                <div
-                                    className="tab-pane fade show active"
-                                    id="games"
-                                    role="tabpanel"
-                                    aria-labelledby="games-tab"
-                                    data-bs-parent="#videoTabs"
-                                >
-                                    <div className="block">
-                                        <div className="swiper_1 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                        <div className="cases_slider splide">
+                            <div className="splide__track">
+                                <div className="splide__list">
+                                    <div className="cases_slider-slide splide__slide">
+                                        <div className="overlay">
+                                            <div className="hotspot" tab-index="0">
+                                                <span className="hotspot_trigger"></span>
+                                                <div className="hotspot_content">
+                                                    <a className="link" href="product.html">
+                                                        <span className="preview">
                                                             <picture>
                                                                 <source
-                                                                    data-srcset="img/placeholder.jpg"
+                                                                    data-srcSet="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -231,177 +300,39 @@ const Home = () => {
                                                                     className="lazy"
                                                                     data-src="img/placeholder.jpg"
                                                                     src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
+                                                                    alt="Case #1 Bikini"
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
+                                                        <span className="info">
+                                                            <span className="info_title">D&G Bikini</span>
+                                                            <span className="info_price">$599</span>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="swiper_1-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className="media">
+                                            <picture>
+                                                <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                                <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="Case #1" />
+                                            </picture>
+                                        </div>
+                                        <div className="main">
+                                            <a className="main_title h6" href="case.html">[ Collaboration with Nikki Sports ]</a>
+                                            <a className="link link--underline" href="#">@looksyinstagirl</a>
                                         </div>
                                     </div>
-                                    <div className="block">
-                                        <div className="swiper_2 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                    <div className="cases_slider-slide splide__slide">
+                                        <div className="overlay">
+                                            <div className="hotspot" tab-index="0">
+                                                <span className="hotspot_trigger"></span>
+                                                <div className="hotspot_content">
+                                                    <a className="link" href="product.html">
+                                                        <span className="preview">
                                                             <picture>
                                                                 <source
-                                                                    data-srcset="img/placeholder.jpg"
+                                                                    data-srcSet="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -409,41 +340,25 @@ const Home = () => {
                                                                     className="lazy"
                                                                     data-src="img/placeholder.jpg"
                                                                     src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
+                                                                    alt="Case #2 T-Shirt"
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                        <span className="info">
+                                                            <span className="info_title">T-shirt</span>
+                                                            <span className="info_price">$19</span>
+                                                        </span>
+                                                    </a>
                                                 </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                            </div>
+                                            <div className="hotspot" tab-index="0">
+                                                <span className="hotspot_trigger"></span>
+                                                <div className="hotspot_content">
+                                                    <a className="link" href="product.html">
+                                                        <span className="preview">
                                                             <picture>
                                                                 <source
-                                                                    data-srcset="img/placeholder.jpg"
+                                                                    data-srcSet="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -451,41 +366,25 @@ const Home = () => {
                                                                     className="lazy"
                                                                     data-src="img/placeholder.jpg"
                                                                     src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
+                                                                    alt="Case #2 Tracks"
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                        <span className="info">
+                                                            <span className="info_title">Tracks</span>
+                                                            <span className="info_price">$159</span>
+                                                        </span>
+                                                    </a>
                                                 </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                            </div>
+                                            <div className="hotspot" tab-index="0">
+                                                <span className="hotspot_trigger"></span>
+                                                <div className="hotspot_content">
+                                                    <a className="link" href="product.html">
+                                                        <span className="preview">
                                                             <picture>
                                                                 <source
-                                                                    data-srcset="img/placeholder.jpg"
+                                                                    data-srcSet="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -493,93 +392,73 @@ const Home = () => {
                                                                     className="lazy"
                                                                     data-src="img/placeholder.jpg"
                                                                     src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
+                                                                    alt="Case #2 Sweater"
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
+                                                        <span className="info">
+                                                            <span className="info_title">Yellow sweater</span>
+                                                            <span className="info_price">$230</span>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="swiper_2-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className="media">
+                                            <a className="link" href="product.html">
+                                                <picture>
+                                                    <source
+                                                        data-srcSet="img/placeholder.jpg"
+                                                        srcSet="img/placeholder.jpg"
+                                                        type="image/webp"
+                                                    />
+                                                    <img
+                                                        className="lazy"
+                                                        data-src="img/placeholder.jpg"
+                                                        src="img/placeholder.jpg"
+                                                        alt="Case #2"
+                                                    />
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div className="main">
+                                            <h6 className="main_title">New Collection with YG-34</h6>
+                                            <a className="link link--underline" href="#">#shopnow</a>
                                         </div>
                                     </div>
-                                    <div className="block">
-                                        <div className="swiper_3 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                    <div className="cases_slider-slide splide__slide">
+                                        <div className="media">
+                                            <a className="link" href="product.html">
+                                                <picture>
+                                                    <source
+                                                        data-srcSet="img/placeholder.jpg"
+                                                        srcSet="img/placeholder.jpg"
+                                                        type="image/webp"
+                                                    />
+                                                    <img
+                                                        className="lazy"
+                                                        data-src="img/placeholder.jpg"
+                                                        src="img/placeholder.jpg"
+                                                        alt="Case #3"
+                                                    />
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div className="main">
+                                            <h6 className="main_title">Presentation from Off Black Limited</h6>
+                                            <a className="link link--underline" href="#">#newcollection</a>
+                                        </div>
+                                    </div>
+                                    <div className="cases_slider-slide splide__slide">
+                                        <div className="overlay">
+                                            <div className="hotspot" tab-index="0">
+                                                <span className="hotspot_trigger"></span>
+                                                <div className="hotspot_content">
+                                                    <a className="link" href="product.html">
+                                                        <span className="preview">
                                                             <picture>
                                                                 <source
-                                                                    data-srcset="img/placeholder.jpg"
+                                                                    data-srcSet="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -587,185 +466,72 @@ const Home = () => {
                                                                     className="lazy"
                                                                     data-src="img/placeholder.jpg"
                                                                     src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
+                                                                    alt="Case #4 Bottle"
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
+                                                        <span className="info">
+                                                            <span className="info_title">Bottle</span>
+                                                            <span className="info_price">$12</span>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="swiper_3-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className="media">
+                                            <a className="link" href="product.html">
+                                                <picture>
+                                                    <source
+                                                        data-srcSet="img/placeholder.jpg"
+                                                        srcSet="img/placeholder.jpg"
+                                                        type="image/webp"
+                                                    />
+                                                    <img
+                                                        className="lazy"
+                                                        data-src="img/placeholder.jpg"
+                                                        src="img/placeholder.jpg"
+                                                        alt="Case #4"
+                                                    />
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div className="main">
+                                            <h6 className="main_title">New Branding Campaign</h6>
+                                            <a className="link link--underline" href="#">@looksyinstagirl</a>
                                         </div>
                                     </div>
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="matches"
-                                    role="tabpanel"
-                                    aria-labelledby="matches-tab"
-                                    data-bs-parent="#videoTabs"
-                                >
-                                    <div className="block">
-                                        <div className="swiper_4 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                    <div className="cases_slider-slide splide__slide">
+                                        <div className="media">
+                                            <a className="link" href="product.html">
+                                                <picture>
+                                                    <source
+                                                        data-srcSet="img/placeholder.jpg"
+                                                        srcSet="img/placeholder.jpg"
+                                                        type="image/webp"
+                                                    />
+                                                    <img
+                                                        className="lazy"
+                                                        data-src="img/placeholder.jpg"
+                                                        src="img/placeholder.jpg"
+                                                        alt="Case #5"
+                                                    />
+                                                </picture>
+                                            </a>
+                                        </div>
+                                        <div className="main">
+                                            <h6 className="main_title">Creating a street style icon with Upcreators Fashion Brand</h6>
+                                        </div>
+                                    </div>
+                                    <div className="cases_slider-slide splide__slide">
+                                        <div className="overlay">
+                                            <div className="hotspot" tab-index="0">
+                                                <span className="hotspot_trigger"></span>
+                                                <div className="hotspot_content">
+                                                    <a className="link" href="product.html">
+                                                        <span className="preview">
                                                             <picture>
                                                                 <source
-                                                                    data-srcset="img/placeholder.jpg"
+                                                                    data-srcSet="img/placeholder.jpg"
                                                                     srcSet="img/placeholder.jpg"
                                                                     type="image/webp"
                                                                 />
@@ -773,2142 +539,38 @@ const Home = () => {
                                                                     className="lazy"
                                                                     data-src="img/placeholder.jpg"
                                                                     src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
+                                                                    alt="Case #6 Puffer"
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
+                                                        <span className="info">
+                                                            <span className="info_title">Puffer</span>
+                                                            <span className="info_price">$999</span>
                                                         </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
+                                                    </a>
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="swiper_4-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className="media">
+                                            <a className="link" href="product.html">
+                                                <picture>
+                                                    <source
+                                                        data-srcSet="img/placeholder.jpg"
+                                                        srcSet="img/placeholder.jpg"
+                                                        type="image/webp"
+                                                    />
+                                                    <img
+                                                        className="lazy"
+                                                        data-src="img/placeholder.jpg"
+                                                        src="img/placeholder.jpg"
+                                                        alt="Case #6"
+                                                    />
+                                                </picture>
+                                            </a>
                                         </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_5 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_5-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_6 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_6-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="chatting"
-                                    role="tabpanel"
-                                    aria-labelledby="chatting-tab"
-                                    data-bs-parent="#videoTabs"
-                                >
-                                    <div className="block">
-                                        <div className="swiper_7 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_7-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_8 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_8-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_9 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_9-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div
-                                    className="tab-pane fade"
-                                    id="challenges"
-                                    role="tabpanel"
-                                    aria-labelledby="challenges-tab"
-                                    data-bs-parent="#videoTabs"
-                                >
-                                    <div className="block">
-                                        <div className="swiper_10 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_10-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_11 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_11-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_12 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_12-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="tab-pane fade" id="rates" role="tabpanel" aria-labelledby="rates-tab" data-bs-parent="#videoTabs">
-                                    <div className="block">
-                                        <div className="swiper_13 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_13-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_14 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_14-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                        </div>
-                                    </div>
-                                    <div className="block">
-                                        <div className="swiper_15 swiper">
-                                            <div className="swiper-wrapper">
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
-                                                                Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                                <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="cover"
-                                                                />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <img
-                                                                    className="lazy"
-                                                                    data-src="img/placeholder.jpg"
-                                                                    src="img/placeholder.jpg"
-                                                                    alt="avatar"
-                                                                />
-                                                            </picture>
-                                                        </span>
-                                                        <div className="main_info">
-                                                            <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
-                                                                Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="swiper_15-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className="main">
+                                            <h6 className="main_title">Viral Challenge</h6>
+                                            <a className="link link--underline" href="#">#getorangeback</a>
                                         </div>
                                     </div>
                                 </div>
@@ -2916,236 +578,85 @@ const Home = () => {
                         </div>
                     </div>
                 </section>
-                <section className="join section">
+                <section className="banner section">
                     <div className="container">
-                        <div className="join_media" data-aos="fade-right">
-                            <video autoPlay={true} loop muted playsInline={true}>
-                                <source src="video/vr.ogv" type='video/ogv; codecs="theora, vorbis"' />
-                                <source src="video/vr.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
-                                <source src="video/vr.webm" type='video/webm; codecs="vp8, vorbis"' />
-                            </video>
-                        </div>
-                        <div className="join_main">
-                            <div className="join_main-header">
-                                <h2 className="join_main-header_title h1" data-aos="fade-left">Join</h2>
-                                <span className="join_main-header_emoji" data-aos="fade-left">
-                                    <span className="emoji emoji_item">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                        </picture>
-                                    </span>
-                                    <span className="emoji emoji_item">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                        </picture>
-                                    </span>
-                                    <span className="emoji emoji_item">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
-                                        </picture>
-                                    </span>
-                                </span>
-                                <h2 className="join_main-header_subtitle" data-aos="fade-left" data-aos-delay="50">Our community</h2>
+                        <div className="banner_main">
+                            <div className="banner_main-icon rotate shape">
+                                <svg width="69" height="69" viewBox="0 0 69 69" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path
+                                        d="M42.993 69L34.5 51.2698L26.007 69L16.1104 64.9008L22.6419 46.3582L4.09932 52.8899L0 42.993L17.7302 34.5L0 26.007L4.09932 16.1103L22.6419 22.6418L16.1104 4.09921L26.007 0L34.5 17.7302L42.993 0L52.8899 4.09921L46.3582 22.6418L64.9008 16.1103L69 26.007L51.2698 34.5L69 42.993L64.9008 52.8899L46.3582 46.3582L52.8899 64.9008L42.993 69Z"
+                                        fill="currentColor"
+                                    />
+                                </svg>
                             </div>
-                            <p className="join_main-text text--md" data-aos="fade-left" data-aos-delay="100">
-                                Maecenas blandit ante elit, eu convallis ligula condimentum ut. Orci varius natoque penatibus et magnis dis
-                                parturient montes, nascetur ridiculus mus. Pellentesque ante tortor, vulputate sit amet arcu
-                            </p>
-                            <div className="wrapper" data-aos="fade-left" data-aos-delay="150">
-                                <a className="btn btn--accent btn--hover-black" href="contacts.html">Want Become a Streamer</a>
-                            </div>
+                            <h2 className="banner_main-title h1">Let’s Get <span className="linebreak">Started ?</span></h2>
+                            <form className="banner_main-form contact-form" action="form.php" method="post" data-type="contacts">
+                                <input
+                                    className="field required"
+                                    type="text"
+                                    id="contactsName"
+                                    name="contactsName"
+                                    placeholder="Your Name or Brand"
+                                />
+                                <input
+                                    className="field required"
+                                    type="text"
+                                    data-type="email"
+                                    id="contactsEmail"
+                                    name="contactsEmail"
+                                    placeholder="Your Contact E-mail"
+                                />
+                                <textarea
+                                    className="field required"
+                                    id="contactsMessage"
+                                    name="contactsMessage"
+                                    placeholder="Your Question"
+                                ></textarea>
+                                <button className="btn btn--accent btn--hover-black" type="submit">Send a Question</button>
+                            </form>
                         </div>
-                    </div>
-                </section>
-                <section className="insights section">
-                    <div className="container">
-                        <div className="section_nav">
-                            <h3 className="section_nav-title">
-                                <i className="icon-sharp-star"></i>
-
-                                Insights & News
-                            </h3>
-                            <div className="section_nav-controls">
-                                <span className="divider"></span>
-
-                                <div className="insights_nav section_nav-controls_btns">
-                                    <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                    <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="insights_slider swiper">
-                            <div className="swiper-wrapper">
-                                <div className="box_posts-item swiper-slide">
-                                    <div className="media">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img
-                                                className="lazy"
-                                                data-src="img/placeholder.jpg"
-                                                src="img/placeholder.jpg"
-                                                alt="Young All-Girl Punk Band The Linda Mindas Sign With Epitaph Records"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div className="main">
-                                        <a className="main_title h4" href="post-sidebar.html"
-                                        >Young All-Girl Punk Band The Linda Mindas Sign With Epitaph Records</a
-                                        >
-                                        <ul className="main_meta meta">
-                                            <li className="meta_item">28 Aug 2021</li>
-                                            <li className="meta_item">Gaming</li>
-                                            <li className="meta_item">Post by John Doe</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="box_posts-item swiper-slide">
-                                    <div className="media">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img
-                                                className="lazy"
-                                                data-src="img/placeholder.jpg"
-                                                src="img/placeholder.jpg"
-                                                alt="Michelin-Starred Chef Joins Shake Shack Pizza For a Limited-Edition"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div className="main">
-                                        <a className="main_title h4" href="post-sidebar.html"
-                                        >Michelin-Starred Chef Joins Shake Shack Pizza For a Limited-Edition</a
-                                        >
-                                        <ul className="main_meta meta">
-                                            <li className="meta_item">28 Aug 2021</li>
-                                            <li className="meta_item">Gaming</li>
-                                            <li className="meta_item">Post by John Doe</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="box_posts-item swiper-slide">
-                                    <div className="media">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img
-                                                className="lazy"
-                                                data-src="img/placeholder.jpg"
-                                                src="img/placeholder.jpg"
-                                                alt="New 'Paranormal Activity' Film and Documentary to Release on Studio"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div className="main">
-                                        <a className="main_title h4" href="post-sidebar.html"
-                                        >New 'Paranormal Activity' Film and Documentary to Release on Studio</a
-                                        >
-                                        <ul className="main_meta meta">
-                                            <li className="meta_item">28 Aug 2021</li>
-                                            <li className="meta_item">Gaming</li>
-                                            <li className="meta_item">Post by John Doe</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="box_posts-item swiper-slide">
-                                    <div className="media">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img
-                                                className="lazy"
-                                                data-src="img/placeholder.jpg"
-                                                src="img/placeholder.jpg"
-                                                alt="Preview Graphically-Charged Winter Fall 2023 Collection"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div className="main">
-                                        <a className="main_title h4" href="post-sidebar.html"
-                                        >Preview Graphically-Charged Winter Fall 2023 Collection</a
-                                        >
-                                        <ul className="main_meta meta">
-                                            <li className="meta_item">28 Aug 2021</li>
-                                            <li className="meta_item">Gaming</li>
-                                            <li className="meta_item">Post by John Doe</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="box_posts-item swiper-slide">
-                                    <div className="media">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img
-                                                className="lazy"
-                                                data-src="img/placeholder.jpg"
-                                                src="img/placeholder.jpg"
-                                                alt="First-Time ‘Funfoot’  Streamer Discovers Glitch for Speedrunners"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div className="main">
-                                        <a className="main_title h4" href="post-sidebar.html"
-                                        >First-Time ‘Funfoot’ Streamer Discovers Glitch for Speedrunners</a
-                                        >
-                                        <ul className="main_meta meta">
-                                            <li className="meta_item">28 Aug 2021</li>
-                                            <li className="meta_item">Gaming</li>
-                                            <li className="meta_item">Post by John Doe</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="box_posts-item swiper-slide">
-                                    <div className="media">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img
-                                                className="lazy"
-                                                data-src="img/placeholder.jpg"
-                                                src="img/placeholder.jpg"
-                                                alt="For his latest release, Harrington has revisited the folks"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div className="main">
-                                        <a className="main_title h4" href="post-sidebar.html"
-                                        >For his latest release, Harrington has revisited the folks</a
-                                        >
-                                        <ul className="main_meta meta">
-                                            <li className="meta_item">28 Aug 2021</li>
-                                            <li className="meta_item">Gaming</li>
-                                            <li className="meta_item">Post by John Doe</li>
-                                        </ul>
-                                    </div>
-                                </div>
-                                <div className="box_posts-item swiper-slide">
-                                    <div className="media">
-                                        <picture>
-                                            <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
-                                            <img
-                                                className="lazy"
-                                                data-src="img/placeholder.jpg"
-                                                src="img/placeholder.jpg"
-                                                alt="'Attack on Titan' Sets Guiness World Record for Largest Comic Book"
-                                            />
-                                        </picture>
-                                    </div>
-                                    <div className="main">
-                                        <a className="main_title h4" href="post-sidebar.html"
-                                        >'Attack on Titan' Sets Guiness World Record for Largest Comic Book</a
-                                        >
-                                        <ul className="main_meta meta">
-                                            <li className="meta_item">28 Aug 2021</li>
-                                            <li className="meta_item">Gaming</li>
-                                            <li className="meta_item">Post by John Doe</li>
-                                        </ul>
-                                    </div>
-                                </div>
+                        <div className="banner_media">
+                            <picture>
+                                <source data-srcSet="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
+                                <img
+                                    className="lazy"
+                                    data-src="img/placeholder.jpg"
+                                    src="img/placeholder.jpg"
+                                    alt="Let`s get started"
+                                />
+                            </picture>
+                            <div className="banner_media-lottie">
+                                <a className="getup" href="events.html"></a>
                             </div>
                         </div>
                     </div>
                 </section>
+                <div className="brands section">
+                    <div className="brands_list">
+                        <div className="brands_list-row">
+                            <img className="brands_list-row_item" src="svg/brands/01.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/02.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/03.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/04.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/05.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/06.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/12.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/04.svg" alt="media" />
+                        </div>
+                        <div className="brands_list-row">
+                            <img className="brands_list-row_item" src="svg/brands/08.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/07.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/09.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/10.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/11.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/12.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/01.svg" alt="media" />
+                            <img className="brands_list-row_item" src="svg/brands/09.svg" alt="media" />
+                        </div>
+                    </div>
+                </div>
             </main>
-        </div>
+        </>
     );
 }
 
