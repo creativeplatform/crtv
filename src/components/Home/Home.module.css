@@ -61,6 +61,37 @@
     opacity: 0
 }
 
+.about_secondary-row {
+    text-transform: uppercase;
+    font-weight: 900;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 10px;
+    color: rgba(98,26,193,.1);
+    position: relative;
+    width: 2600px
+}
+
+.about_secondary-row .highlight {
+    color: #212122
+}
+
+.about_secondary-row .highlight--purple {
+    color: #621ac1
+}
+
+.about_secondary-row:first-of-type {
+    margin-left: -140px
+}
+
+.about_secondary-row:nth-of-type(2) {
+    margin-left: -100px
+}
+
+.about_secondary-row:last-of-type {
+    margin-left: -110px
+}
 @media screen and (min-width:413.98px) {
     .hero_title {
         font-size: 80px !important
@@ -95,6 +126,10 @@
 @media screen and (min-width:1169.98px) {
     .hero {
         margin-top: 84px
+    }
+    .about_secondary-row {
+        font-size: 80px;
+        line-height: 1
     }
 }
 
@@ -238,7 +273,7 @@
     display: -ms-inline-flexbox;
     display: inline-flex;
     -ms-flex-wrap: wrap;
-    flex-wrap: wrap
+    flex-wrap: wrap;
 }
 
 .about_main .description .main_text .emoji img {
@@ -320,7 +355,7 @@
 }
 
 @media screen and (min-width:1169.98px) {
-    .about .container {
+    .container {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -392,7 +427,11 @@
 }
 
 .channels .divider {
-    background: #fff
+    background: #fff;
+    height: 3px;
+    max-width: 400px;
+    flex-grow: 1;
+    display: flex;
 }
 
 .channels .container {
@@ -427,7 +466,9 @@
 
 .channels_content-display .swiper-slide {
     position: relative;
-    z-index: 9
+    z-index: 9;
+    margin-right: 30px;
+    width: 410px;
 }
 
 .channels_content-display .swiper-slide .media {
@@ -698,7 +739,8 @@
 .join_main-header_emoji .emoji {
     display: inline-block;
     aspect-ratio: 1/1;
-    width: 40px
+    width: 40px;
+    margin-right: 5px;;
 }
 
 .join_main-header_emoji .emoji img {
@@ -804,4 +846,8 @@
         margin-left: 400px;
         margin-right: -170px
     }
+}
+
+.section_nav-controls_btns .link:first-of-type {
+    margin-right: 30px;
 }

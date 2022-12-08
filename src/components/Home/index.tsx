@@ -23,13 +23,13 @@ export default function Home() {
                     </div>
                 </section>
                 <div className="about section">
-                    <div className="container">
-                        <div className="about_main">
-                            <div className="media video">
+                    <div className={styles['container']}>
+                        <div className={styles['about_main']}>
+                            <div className={[styles['media'], 'video'].join(' ')}>
                                 <div className="cover">
-                                    <div className="media_overlay">
-                                        <span className="label h4">live</span>
-                                        <a className="play" href="#">
+                                    <div className={styles['media_overlay']}>
+                                        <span className={[styles['label'], 'h4'].join(' ')}>live</span>
+                                        <a className={styles['play']} href="#">
                                             <svg width="84" height="93" viewBox="0 0 84 93" fill="none" xmlns="http://www.w3.org/2000/svg">
                                                 <path
                                                     fillRule="evenodd"
@@ -51,8 +51,8 @@ export default function Home() {
                                     showPipButton
                                 />
                             </div>
-                            <div className="description">
-                                <span className="avatar">
+                            <div className={styles['description']}>
+                                <span className={styles['avatar']}>
                                     <picture>
                                         <source
                                             data-srcset="img/placeholder.jpg"
@@ -67,16 +67,16 @@ export default function Home() {
                                         />
                                     </picture>
                                 </span>
-                                <div className="main">
+                                <div className={styles['main']}>
                                     <a className="main_title h4" href="#">Ratings & Releases</a>
-                                    <ul className="main_meta meta">
+                                    <ul className={[styles['main_meta'], 'meta'].join(' ')}>
                                         <li className="meta_item">1 Aug 2021</li>
                                         <li className="meta_item">Brands</li>
                                         <li className="meta_item">Stream by John D</li>
                                     </ul>
-                                    <p className="main_text text--md">
+                                    <p className={[styles['main_text'], 'text--md'].join(' ')}>
                                         Fusce dapibus ante vitae
-                                        <span className="emoji">
+                                        <span className={styles['emoji']}>
                                             <span className="emoji_item">
                                                 <picture>
                                                     <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
@@ -114,23 +114,23 @@ export default function Home() {
                                 </div>
                             </div>
                         </div>
-                        <div className="about_secondary">
-                            <div className="about_secondary-row h1">
-                                Strike. <span className="highlight" data-aos="fade-left">Watch.</span> Brand. Challenge.
+                        <div className={styles['about_secondary']}>
+                            <div className={[styles['about_secondary-row'], 'h1'].join(' ')}>
+                                Strike. <span className={styles['highlight']} data-aos="fade-left">Watch.</span> Brand. Challenge.
                             </div>
-                            <div className="about_secondary-row h1">
+                            <div className={[styles['about_secondary-row'], 'h1'].join(' ')}>
                                 Brand.
-                                <span className="highlight highlight--purple" data-aos="fade-left" data-aos-delay="50"> Stream.</span> Create.
+                                <span className={styles['highlight--purple']} data-aos="fade-left" data-aos-delay="50"> Stream.</span> Create.
                                 Inspire. Dream.
                             </div>
-                            <div className="about_secondary-row h1">
-                                Stream. <span className="highlight" data-aos="fade-left" data-aos-delay="100">Create.</span> Stars. Watch. Reinvent.
+                            <div className={[styles['about_secondary-row'], 'h1'].join(' ')}>
+                                Stream. <span className={styles['highlight']} data-aos="fade-left" data-aos-delay="100">Create.</span> Stars. Watch. Reinvent.
                             </div>
                         </div>
                     </div>
                 </div>
-                <section className="channels section">
-                    <div className="channels_bg">
+                <section className={[styles['channels'], 'section'].join(' ')}>
+                    <div className={styles['channels_bg']}>
                         <picture>
                             <source data-srcset="img/gradients/10.webp" srcSet="img/gradients/10.webp" type="image/webp" />
                             <img className="lazy" data-src="img/gradients/10.png" src="img/gradients/10.png" alt="media" />
@@ -138,17 +138,17 @@ export default function Home() {
                     </div>
                     <div className="container">
                         <div className="section_nav">
-                            <h3 className="section_nav-title">
+                            <h3 className={styles['section_nav-title']}>
                                 <i className="icon-bold-cross"></i>
 
                                 Live Channels
                             </h3>
                             <div className="section_nav-controls">
-                                <span className="divider"></span>
+                                <span className={styles['divider']}></span>
                             </div>
                         </div>
                         <div className="channels_content">
-                            <ul className="channels_content-nav nav nav-tabs tags" role="tablist">
+                            <ul className={[styles['channels_content-nav'], 'nav', 'nav-tabs', 'tags'].join(' ')} role="tablist">
                                 <li className="nav-item h4" role="presentation">
                                     <div
                                         className="nav-link tags_item white active"
@@ -210,7 +210,7 @@ export default function Home() {
                                     </div>
                                 </li>
                             </ul>
-                            <div className="channels_content-display tab-content" id="videoTabs">
+                            <div className={[styles['channels_content-display'], 'tab-content'].join(' ')} id="videoTabs">
                                 <div
                                     className="tab-pane fade show active"
                                     id="games"
@@ -218,12 +218,14 @@ export default function Home() {
                                     aria-labelledby="games-tab"
                                     data-bs-parent="#videoTabs"
                                 >
-                                    <div className="block">
-                                        <div className="swiper_1 swiper">
+                                    <div className={styles['block']}>
+                                        {/* <div className={[styles['swiper'], 'swiper_1'].join(' ')}> */}
+                                        <div className="swiper swiper_1"> 
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -245,8 +247,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -261,17 +263,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -287,8 +290,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -303,17 +306,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -329,8 +333,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -345,17 +349,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -371,8 +376,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -387,9 +392,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -397,17 +402,18 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="swiper_1-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className={[styles['swiper-nav'], 'swiper_1-nav'].join(' ')}>
+                                            <a className={[styles['link'], 'swiper-button-prev'].join(' ')} href="#"><i className="icon-angle-left"></i></a>
+                                            <a className={[styles['link'], 'swiper-button-next'].join(' ')} href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_2 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -423,8 +429,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -439,17 +445,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -465,8 +472,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -481,17 +488,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -507,8 +515,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -523,17 +531,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -549,8 +558,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -565,9 +574,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -575,17 +584,18 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="swiper_2-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className={[styles['swiper-nav'], 'swiper_2-nav'].join(' ')}>
+                                            <a className={[styles['link'], 'swiper-button-prev'].join(' ')} href="#"><i className="icon-angle-left"></i></a>
+                                            <a className={[styles['link'], 'swiper-button-next'].join(' ')} href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_3 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -601,8 +611,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -617,17 +627,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -643,8 +654,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -659,17 +670,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -685,8 +697,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -701,17 +713,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -727,8 +740,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -743,9 +756,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -753,9 +766,9 @@ export default function Home() {
                                                 </div>
                                             </div>
                                         </div>
-                                        <div className="swiper_3-nav swiper-nav">
-                                            <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                            <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                        <div className={[styles['swiper-nav'], 'swiper_3-nav'].join(' ')}>
+                                            <a className={[styles['link'], 'swiper-button-prev'].join(' ')} href="#"><i className="icon-angle-left"></i></a>
+                                            <a className={[styles['link'], 'swiper-button-next'].join(' ')} href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
                                 </div>
@@ -766,12 +779,13 @@ export default function Home() {
                                     aria-labelledby="matches-tab"
                                     data-bs-parent="#videoTabs"
                                 >
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_4 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -787,8 +801,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -803,17 +817,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -829,8 +844,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -845,17 +860,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -871,8 +887,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -887,17 +903,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -913,8 +930,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -929,9 +946,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -944,12 +961,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_5 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -965,8 +983,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -981,17 +999,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1007,8 +1026,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1023,17 +1042,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1049,8 +1069,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1065,17 +1085,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1091,8 +1112,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1107,9 +1128,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -1122,12 +1143,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_6 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1143,8 +1165,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1159,17 +1181,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1185,8 +1208,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1201,17 +1224,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1227,8 +1251,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1243,17 +1267,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1269,8 +1294,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1285,9 +1310,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -1308,12 +1333,13 @@ export default function Home() {
                                     aria-labelledby="chatting-tab"
                                     data-bs-parent="#videoTabs"
                                 >
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_7 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1329,8 +1355,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1345,17 +1371,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1371,8 +1398,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1387,17 +1414,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1413,8 +1441,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1429,17 +1457,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1455,8 +1484,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1471,9 +1500,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -1486,12 +1515,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_8 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1507,8 +1537,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1523,17 +1553,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1549,8 +1580,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1565,17 +1596,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1591,8 +1623,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1607,17 +1639,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1633,8 +1666,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1649,9 +1682,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -1664,12 +1697,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_9 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1685,8 +1719,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1701,17 +1735,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1727,8 +1762,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1743,17 +1778,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1769,8 +1805,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1785,17 +1821,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1811,8 +1848,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1827,9 +1864,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -1850,12 +1887,13 @@ export default function Home() {
                                     aria-labelledby="challenges-tab"
                                     data-bs-parent="#videoTabs"
                                 >
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_10 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1871,8 +1909,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1887,17 +1925,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1913,8 +1952,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1929,17 +1968,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1955,8 +1995,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1971,17 +2011,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -1997,8 +2038,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2013,9 +2054,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -2028,12 +2069,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_11 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2049,8 +2091,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2065,17 +2107,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2091,8 +2134,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2107,17 +2150,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2133,8 +2177,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2149,17 +2193,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2175,8 +2220,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2191,9 +2236,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -2206,12 +2251,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_12 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2227,8 +2273,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2243,17 +2289,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2269,8 +2316,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2285,17 +2332,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2311,8 +2359,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2327,17 +2375,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2353,8 +2402,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2369,9 +2418,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -2386,12 +2435,13 @@ export default function Home() {
                                     </div>
                                 </div>
                                 <div className="tab-pane fade" id="rates" role="tabpanel" aria-labelledby="rates-tab" data-bs-parent="#videoTabs">
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_13 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2407,8 +2457,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2423,17 +2473,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Streamers</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2449,8 +2500,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2465,17 +2516,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Skateboard bmx</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2491,8 +2543,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2507,17 +2559,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">E-Sport Live Matches</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2533,8 +2586,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2549,9 +2602,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Mountain Bike Rider</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -2564,12 +2617,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_14 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2585,8 +2639,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2601,17 +2655,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Travel Vlogs</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2627,8 +2682,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2643,17 +2698,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">ratings & Releases</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2669,8 +2725,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2685,17 +2741,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Music & Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2711,8 +2768,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2727,9 +2784,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Game Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -2742,12 +2799,13 @@ export default function Home() {
                                             <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
                                         </div>
                                     </div>
-                                    <div className="block">
+                                    <div className={styles['block']}>
                                         <div className="swiper_15 swiper">
                                             <div className="swiper-wrapper">
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2763,8 +2821,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2779,17 +2837,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Comic-Con Set</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2805,8 +2864,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2821,17 +2880,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Podcasts</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2847,8 +2907,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2863,17 +2923,18 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Replays & Highlights</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Praesent eu erat vitae enim tempor interdum quis eget magna. Interdum
                                                             </p>
                                                         </div>
                                                     </div>
                                                 </div>
+                                                {/* <div className={styles['swiper-slide']}> */}
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
+                                                    <div className={styles['media']}>
+                                                        <a className={[styles['link'], 'eyeTrigger'].join(' ')} href="#">
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2889,8 +2950,8 @@ export default function Home() {
                                                             </picture>
                                                         </a>
                                                     </div>
-                                                    <div className="main">
-                                                        <span className="main_avatar">
+                                                    <div className={styles['main']}>
+                                                        <span className={styles['main_avatar']}>
                                                             <picture>
                                                                 <source
                                                                     data-srcset="img/placeholder.jpg"
@@ -2905,9 +2966,9 @@ export default function Home() {
                                                                 />
                                                             </picture>
                                                         </span>
-                                                        <div className="main_info">
+                                                        <div className={styles['main_info']}>
                                                             <a className="title h4" href="#">Lifestyle Chatters</a>
-                                                            <p className="text">
+                                                            <p className={styles['text']}>
                                                                 Interdum malesuada fames ac ante ipsum primis in faucibus. Nam massa
                                                             </p>
                                                         </div>
@@ -2926,31 +2987,31 @@ export default function Home() {
                     </div>
                 </section>
                 <section className="join section">
-                    <div className="container">
-                        <div className="join_media" data-aos="fade-right">
+                    <div className={[styles['container'], 'container'].join(' ')}>
+                        <div className={styles['join_media']} data-aos="fade-right">
                             <video autoPlay={true} loop muted playsInline={true}>
                                 <source src="video/vr.ogv" type='video/ogv; codecs="theora, vorbis"' />
                                 <source src="video/vr.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
                                 <source src="video/vr.webm" type='video/webm; codecs="vp8, vorbis"' />
                             </video>
                         </div>
-                        <div className="join_main">
-                            <div className="join_main-header">
+                        <div className={styles['join_main']}>
+                            <div className={styles['join_main-header']}>
                                 <h2 className="join_main-header_title h1" data-aos="fade-left">Join</h2>
-                                <span className="join_main-header_emoji" data-aos="fade-left">
-                                    <span className="emoji emoji_item">
+                                <span className={styles['join_main-header_emoji']} data-aos="fade-left">
+                                    <span className={[styles['emoji'], 'emoji_item'].join(' ')}>
                                         <picture>
                                             <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                                         </picture>
                                     </span>
-                                    <span className="emoji emoji_item">
+                                    <span className={[styles['emoji'], 'emoji_item'].join(' ')}>
                                         <picture>
                                             <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
                                         </picture>
                                     </span>
-                                    <span className="emoji emoji_item">
+                                    <span className={[styles['emoji'], 'emoji_item'].join(' ')}>
                                         <picture>
                                             <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                             <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="media" />
@@ -2959,7 +3020,7 @@ export default function Home() {
                                 </span>
                                 <h2 className="join_main-header_subtitle" data-aos="fade-left" data-aos-delay="50">Our community</h2>
                             </div>
-                            <p className="join_main-text text--md" data-aos="fade-left" data-aos-delay="100">
+                            <p className={[styles['join_main-text'], 'text--md'].join(' ')} data-aos="fade-left" data-aos-delay="100">
                                 Maecenas blandit ante elit, eu convallis ligula condimentum ut. Orci varius natoque penatibus et magnis dis
                                 parturient montes, nascetur ridiculus mus. Pellentesque ante tortor, vulputate sit amet arcu
                             </p>
@@ -2969,7 +3030,7 @@ export default function Home() {
                         </div>
                     </div>
                 </section>
-                <section className="insights section">
+                <section className={[styles['insights'], 'insights section'].join(' ')}>
                     <div className="container">
                         <div className="section_nav">
                             <h3 className="section_nav-title">
@@ -2980,9 +3041,9 @@ export default function Home() {
                             <div className="section_nav-controls">
                                 <span className="divider"></span>
 
-                                <div className="insights_nav section_nav-controls_btns">
-                                    <a className="link swiper-button-prev" href="#"><i className="icon-angle-left"></i></a>
-                                    <a className="link swiper-button-next" href="#"><i className="icon-angle-right"></i></a>
+                                <div className={[styles['section_nav-controls_btns'], 'insights_nav'].join(' ')}>
+                                    <a className={[styles['link'], 'swiper-button-prev'].join(' ')} href="#"><i className="icon-angle-left"></i></a>
+                                    <a className={[styles['link'], 'swiper-button-next'].join(' ')} href="#"><i className="icon-angle-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -3155,7 +3216,7 @@ export default function Home() {
                 </section>
             </main>
             <div className="ticker yellow">
-                <div className="d-none">
+                <div>
                     <span className="ticker-item">new Ideas</span>
                     <span className="ticker-item">Join us</span>
                     <span className="ticker-item">UP Creators</span>
