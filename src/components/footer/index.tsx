@@ -107,7 +107,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <p className="footer_copy">Copyright@ <span id="currentYear"></span> Creative Organization DAO, LLC.</p>
+            <p className="footer_copy">&copy;<span id="currentYear"></span> Creative Organization DAO, LLC.</p>
         </footer>
     );
 };
