@@ -608,10 +608,6 @@
         margin: 50px 0
     }
 
-    .channels_content-display .tab-pane .block:last-of-type .swiper-nav {
-        height: 100%
-    }
-
     .channels_content-display .swiper {
         max-width: 1730px;
         overflow: hidden
