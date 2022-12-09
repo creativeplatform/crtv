@@ -18,7 +18,7 @@ import { initSwiperSlider, initInsightSwiper } from "../../public/scripts/module
 // const Brands = dynamic(() => import("../components/brands"));
 // const Banners = dynamic(() => import("../components/banners"), { ssr: false });
 
-import HomeComponent from "../components/Home";
+import HomeComponent from "../components/home";
 // import DynamicStyle from "../components/partial/Style";
 
 // import { IProduct } from "../lib/types/products";
