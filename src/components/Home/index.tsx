@@ -13,7 +13,7 @@ export default function Home() {
                         </picture>
                     </div>
                     <div className={'container'}>
-                        <h1 className={[styles['hero_title'], 'extra', 'glitch'].join(' ')} data-text="what's on-air?">what's on-air?</h1>
+                        <h1 className="hero_title extra glitch" data-text="what's on-air?">what's on-air?</h1>
                         <div className={styles['hero_media']}>
                             <picture>
                                 <source data-srcSet="img/radiate_warrior.png" srcSet="img/radiate_warrior.png" type="image/webp" />
