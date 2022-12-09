@@ -2843,7 +2843,6 @@ h6 {
 
     .box_posts-item .media {
         height: unset !important;
-        aspect-ratio: 56/48
     }
 }
 
@@ -3363,7 +3362,6 @@ h6 {
     -webkit-animation: 3s linear infinite alternate-reverse noise-2, 5s 5s infinite glitch;
     animation: 3s linear infinite alternate-reverse noise-2, 5s 5s infinite glitch
 }
-
 @media screen and (min-width:567.98px) {
     .header_logo .text {
         display: block
@@ -3567,8 +3565,6 @@ h6 {
     }
 }
 
-
-
 .footer {
     background: #212122;
     color: #dbdbdb;
@@ -3579,7 +3575,6 @@ h6 {
 .footer>* {
     display: block;
 }
-
 .footer_bg {
     display: none
 }
@@ -4257,7 +4252,6 @@ h6 {
     }
 }
 
-
 @media screen and (min-width: 1365.98px) {
     .insights_slider {
         margin-left: 400px;
@@ -4411,8 +4405,4 @@ h6 {
         font-size: 220px !important
     }
 }
-
-
-
-
 /*# sourceMappingURL=../sourcemaps/streamers.css.map */

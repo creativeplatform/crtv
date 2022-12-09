@@ -1,3 +1,4 @@
+import React from 'react'
 import { Player } from "@livepeer/react";
 import styles from "./home.module.css";
 
@@ -44,12 +45,7 @@ export default function Home() {
                                         <source data-srcset="img/placeholder.jpg" srcSet="img/placeholder.jpg" type="image/webp" />
                                         <img className="lazy" data-src="img/placeholder.jpg" src="img/placeholder.jpg" alt="cover" />
                                     </picture>
-                                </div>
-                                <Player
-                                    title="Agent 327: Operation Barbershop"
-                                    playbackId="6d7el73r1y12chxr"
-                                    showPipButton
-                                />
+                                </div> */}
                             </div>
                             <div className={styles['description']}>
                                 <span className={styles['avatar']}>
@@ -222,15 +218,7 @@ export default function Home() {
                                         <div className="swiper swiper_1"> 
                                             <div className="swiper-wrapper">
                                                 <div className="swiper-slide">
-                                                    <div className="media">
-                                                        <a className="link eyeTrigger" href="#">
-                                                            <picture>
-                                                                <source
-                                                                    data-srcset="img/placeholder.jpg"
-                                                                    srcSet="img/placeholder.jpg"
-                                                                    type="image/webp"
-                                                                />
-                                                                <Player
+                                                    <Player
                                                                     title="Agent 327: Operation Barbershop"
                                                                     playbackId="6d7el73r1y12chxr"
                                                                     showPipButton
@@ -242,9 +230,6 @@ export default function Home() {
                                                                         radii: { containerBorderRadius: '10px' },
                                                                     }}
                                                                 />
-                                                            </picture>
-                                                        </a>
-                                                    </div>
                                                     <div className="main">
                                                         <span className="main_avatar">
                                                             <picture>
@@ -3048,7 +3033,7 @@ export default function Home() {
                                     </div>
                                     <div className="main">
                                         <a className="main_title h4" href="post-sidebar.html"
-                                        >New 'Paranormal Activity' Film and Documentary to Release on Studio</a
+                                        >New &apos;Paranormal Activity&apos; Film and Documentary to Release on Studio</a
                                         >
                                         <ul className="main_meta meta">
                                             <li className="meta_item">28 Aug 2021</li>
@@ -3094,7 +3079,7 @@ export default function Home() {
                                     </div>
                                     <div className="main">
                                         <a className="main_title h4" href="post-sidebar.html"
-                                        >First-Time ‘Funfoot’ Streamer Discovers Glitch for Speedrunners</a
+                                        >First-Time &apos;Funfoot&apos; Streamer Discovers Glitch for Speedrunners</a
                                         >
                                         <ul className="main_meta meta">
                                             <li className="meta_item">28 Aug 2021</li>
@@ -3140,7 +3125,7 @@ export default function Home() {
                                     </div>
                                     <div className="main">
                                         <a className="main_title h4" href="post-sidebar.html"
-                                        >'Attack on Titan' Sets Guiness World Record for Largest Comic Book</a
+                                        >&apos;Attack on Titan&apos; Sets Guiness World Record for Largest Comic Book</a
                                         >
                                         <ul className="main_meta meta">
                                             <li className="meta_item">28 Aug 2021</li>

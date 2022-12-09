@@ -92,6 +92,7 @@
 .about_secondary-row:last-of-type {
     margin-left: -110px
 }
+
 @media screen and (min-width:413.98px) {
     .hero_title {
         font-size: 80px !important
@@ -432,6 +433,7 @@
     max-width: 400px;
     flex-grow: 1;
     display: flex;
+
 }
 
 .channels .container {
@@ -608,9 +610,8 @@
         margin: 50px 0
     }
 
-    .channels_content-display .swiper {
-        max-width: 1730px;
-        overflow: hidden
+    .channels_content-display .tab-pane .block:last-of-type .swiper-nav {
+        height: 100%
     }
 
     .channels_content-display .swiper-nav {
