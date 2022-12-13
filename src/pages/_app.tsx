@@ -13,7 +13,7 @@ import Web3Provider from '../components/header/Web3Provider';
 import '../styles/preload.css';
 import '../styles/icomoon.css';
 import '../styles/libs.css';
-import '../styles/streamers.css';
+import '../styles/globals.css';
 import Head from 'next/head';
 
 const livepeerClient = createReactClient({
